@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+</script>
+<link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/j-shaixuan.css">
+<link rel="stylesheet" href="../font/iconfont.css">
+<title>筛选天使</title>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <header id="publie-header">
+            <a href="#" class=" act header-item clear">搜索 <span></span></a>
+            <a href="#" class=" header-item clear">活动 <span></span></a>
+            <a href="#" class=" header-item clear">认证 <span></span></a>
+            <a href="#" class=" header-item clear">推荐</a>
+        </header>
+        <div class="content clear">
+            <form action="">
+                <div class="tit">筛选天使</div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">年龄：</div>
+                        <input type="text" class="age"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">身高：</div>
+                        <input type="text" class="height"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">学历：</div>
+                        <input type="text" class="education"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">婚否：</div>
+                        <input type="text" class="hunfou"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">居住地：</div>
+                        <input type="text" class="residence"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">收入：</div>
+                        <input type="text" class="income"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <div class="item clear">
+                    <div class="fl clear item-left">
+                        <div class="fl i-tit">性别：</div>
+                        <input type="text" class="sex"/>
+                    </div>
+                    <div class="fr item-right"><i class="iconfont icon-right"></i></div>
+                </div>
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+        </div>
+    </div>
+</div>
+<footer id="public-footer-warp">
+    <a href="#" class="active footer-item" >
+        <i class="iconfont icon-footer-heart"></i>
+        <p>首页</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-liaotian"></i>
+        <p>聊天</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-naozhong"></i>
+        <p>消息</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-geren"></i>
+        <p>我的</p>
+    </a>
+</footer>
+
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/zepto.min.js" type="text/javascript"></script>
+<script src="../js/sm.min.js" type="text/javascript"></script>
+<!--四级联动-->
+<script src="../js/four-link.js"></script>
+<script type="text/javascript">
+$(function(){
+//    $('.sub').click(function(){
+//        var age = $('.age').val();
+//        var height = $('.height').val();
+//        var education = $('.education').val();
+//        var hunFou = $('.hunfou').val();
+//        var residence = $('.residence').val();
+//        var income = $('.income').val();
+//        var sex = $('.sex').val();
+//
+//    });
+
+
+    //    年龄
+    $(".age").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择年龄</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['20-29岁', '30-39岁', '40-49岁', '50-59岁', '60岁以上']
+            }
+        ]
+    });
+
+    //    身高
+    $(".height").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身高</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['150cm以下', '150cm-159cm', '160cm-169cm', '170cm-174cm', '175cm-180cm', '180cm以上']
+            }
+        ]
+    });
+
+    //    学历
+    $(".education").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择学历</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['小学', '初中', '高中', '大专', '本科', '本科以上']
+            }
+        ]
+    });
+
+    //    婚否
+    $(".hunfou").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择婚否</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['是', '否']
+            }
+        ]
+    });
+
+    //    居住地
+
+    fourLink($(".residence"));
+
+    //    收入
+    $(".income").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择收入</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['500-1000元', '1001-2000元', '2001-3000元', '3001-4000元', '4001-5000元', '5001-6000元', '6001-7000元', '7001-8000元', '8000元以上']
+            }
+        ]
+    });
+
+    //    性别
+    $(".sex").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择性别</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['男', '女']
+            }
+        ]
+    });
+})
+</script>

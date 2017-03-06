@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css?ver=2">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/n-40x-recruit.css">
+    <title>求职信息填写</title>
+</head>
+<body>
+<header id="header-recruit">
+    <!--选中的添加active类-->
+    <a href="#" class="header-item ">
+        <span>招聘</span>
+        <i class="line"></i>
+        <i class="bottom-line"></i>
+    </a>
+    <a href="#" class="header-item active">
+        <span>求职</span>
+        <i class="bottom-line"></i>
+    </a>
+</header>
+
+
+<div class="sm-ui-warp">
+    <div class="page-group">
+        <div class="page">
+            <div class="content">
+                <div class="max-long-warp">
+                    <div class="max-long-head">
+                        <img src="../imgs/user-header.png" alt="用户头像">
+                    </div>
+                    <form action="" type="post" id="form-warp">
+                        <ul class="max-long-list clear">
+                            <li class="max-lont-item clear">
+                                <label for="user-name">
+                                    <p class="fl left-text">姓名：</p>
+                                    <input type="text" name="" class="left-input" id="user-name" required="required" placeholder="请填写姓名">
+                                </label>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-age">
+                                    <p class="fl left-text">年龄：</p>
+                                    <input type="text" id="user-age" name="" class="left-input " required="required" value="20岁" readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-education">
+                                    <p class="fl left-text">学历：</p>
+                                    <input type="text" name="" id="user-education" class="left-input" required="required" value="大学"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-major">
+                                    <p class="fl left-text">专业：</p>
+                                    <input type="text" id="user-major" name="" class="left-input " placeholder="请填写专业">
+                                </label>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-Seat">
+                                    <p class="fl left-text">所在地：</p>
+                                    <input type="text" id="user-Seat" name="" class="left-input " required="required" value="北京" readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-register">
+                                    <p class="fl left-text">户籍：</p>
+                                    <input type="text" id="user-register" name="" class="left-input " required="required" value="北京"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-expert">
+                                    <p class="fl left-text">擅长：</p>
+                                    <input type="text" id="user-expert" name="" class="left-input "  placeholder="请填写擅长内容">
+                                </label>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-marry">
+                                    <p class="fl left-text">婚否：</p>
+                                    <input type="text" id="user-marry" name="" class="left-input " required="required" value="未婚" readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-industry-age">
+                                    <p class="fl left-text">行业经验：</p>
+                                    <input type="text" name="" id="user-industry-age" class="left-input " required="required" value="一至三年"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-need">
+                                    <p class="fl left-text">想找职位：</p>
+                                    <input type="text" name="" id="user-need" class="left-input " required="required" readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-now-type">
+                                    <p class="fl left-text">目前状况：</p>
+                                    <input type="text" name="" id="user-now-type" class="left-input " value="在职" required="required"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-work-time">
+                                    <p class="fl left-text">预计上班时间：</p>
+                                    <input type="text" name="" id="user-work-time" class="left-input " value="立即到岗" required="required"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-need-money">
+                                    <p class="fl left-text">薪资要求：</p>
+                                    <input type="text" id="user-need-money" name="" class="left-input " required="required" value="面议"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-need-eat">
+                                    <p class="fl left-text">吃住要求：</p>
+                                    <input type="text" id="user-need-eat" name="" class="left-input " required="required" value="无要求"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-need-security">
+                                    <p class="fl left-text">社保要求：</p>
+                                    <input type="text" name="" id="user-need-security" class="left-input " value="无要求" required="required"
+                                           readonly>
+                                </label>
+                                <i class="iconfont icon-right"></i>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-phone">
+                                    <p class="fl left-text">联系手机：</p>
+                                    <input type="text" id="user-phone" name="" class="left-input " required="required" placeholder="请填写联系手机">
+                                </label>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-qq">
+                                    <p class="fl left-text">QQ：</p>
+                                    <input type="number" id="user-qq" name="" class="left-input " required="required" placeholder="请填写联系QQ" >
+                                </label>
+                            </li>
+                            <li class="max-lont-item clear">
+                                <label for="user-wechat">
+                                    <p class="fl left-text">微信：</p>
+                                    <input type="text" name="" id="user-wechat" class="left-input " required="required" placeholder="请填写微信" >
+                                </label>
+                            </li>
+                            <!--展示页面不渲染提交按钮-->
+                            <input type="submit" class="form-submit" value="提 交">
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--公共底部-->
+<footer id="public-footer-warp">
+    <a href="#" class="footer-item">
+        <i class="iconfont icon-footer-heart"></i>
+        <p>首页</p>
+    </a>
+    <a href="#" class=" footer-item">
+        <i class="iconfont icon-liaotian"></i>
+        <p>聊天</p>
+    </a>
+    <a href="#" class=" footer-item">
+        <i class="iconfont icon-naozhong"></i>
+        <p>消息</p>
+    </a>
+    <a href="#" class=" footer-item">
+        <i class="iconfont icon-geren"></i>
+        <p>我的</p>
+    </a>
+</footer>
+
+<!--四级联动选择器-->
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/zepto.min.js"></script>
+<script>
+    $.config = {router: false};
+</script>
+<script src="../js/sm.min.js"></script>
+<script src="../js/isTrue.js"></script>
+<script src="../js/four-link.js"></script>
+<script src="../js/EventHand.js"></script>
+<script>
+    $(function () {
+        var ageArr = [];
+        for(var i=16; i<70; i++){
+            ageArr.push(i +'岁');
+        }
+        //绑定选择框 年龄
+        $("#user-age").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ageArr
+                }
+            ]
+        });
+        //学历 user-education
+        $("#user-education").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['初中','高中','大专','大学','硕士','博士']
+                }
+            ]
+        });
+        //婚否
+        $("#user-marry").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['未婚','已婚']
+                }
+            ]
+        });
+        //行业经验
+        $("#user-industry-age").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['一年以下','一至三年','三至五年','五至八年','八至十年','十年以上']
+                }
+            ]
+        });
+        //todo 职位
+        
+        //后台传输数据
+        $("#user-need").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['职位1','职位2','职位3','职位4']
+                }
+            ]
+        });
+        
+        //目前状态
+        $("#user-now-type").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['在职','离职']
+                }
+            ]
+        });
+        //目前状态
+        $("#user-work-time").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['立即到岗','1个月内到岗','3个月内到岗','半年内到岗']
+                }
+            ]
+        });
+        //薪资要求
+        $("#user-need-money").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['4000以下','4000-6000','6000-8000','8000以上','面议']
+                }
+            ]
+        });
+        //薪资要求
+        $("#user-need-money").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['4000以下','4000-6000','6000-8000','8000以上','面议']
+                }
+            ]
+        });
+        
+        //吃住要求
+        $("#user-need-eat").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['无要求','包吃住','不包吃住']
+                }
+            ]
+        });
+    
+        $("#user-need-security").picker({
+            toolbarTemplate: '<header class="bar bar-nav">\
+  <button class="button button-link pull-right close-picker">确定</button>\
+  <h1 class="title">年龄</h1>\
+  </header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['无要求','五险一金','五险']
+                }
+            ]
+        });
+        
+        //个人籍贯，居住地
+        fourLink($('#user-Seat'));
+        fourLink($('#user-register'));
+        
+        //submit的表单验证
+        $('#form-warp').on('submit',function(){
+           if(!reg.isPhoneNum($('#user-phone').val())){
+               alert("请输入正确的手机号");
+               return false;
+            }
+            if(!reg.isQq($('#user-qq').val())){
+                alert("请输入正确的QQ号");
+                return false;
+            }
+        });
+        
+        
+        $.init();
+    })
+</script>
+</body>
+</html>

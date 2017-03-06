@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+.head {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 4%;
+  position: fixed;
+  background: #fff;
+  font-size: 0.56rem;
+  line-height: 1.92rem;
+}
+.head img {
+  width: 0.76rem;
+  height: 0.76rem;
+  vertical-align: middle;
+}
+.head .icon-liebiao {
+  color: #999;
+  font-size: 0.76rem;
+}
+
+.content {
+  top: 2.12rem;
+  padding: 0 4%;
+  background: #fff;
+}
+.content li {
+  padding-top: 1.2rem;
+}
+.content .mo .dsp {
+  float: left;
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.mo .ds-info {
+  width: 65%;
+  float: right;
+}
+
+.ds-info {
+  font-size: 0.56rem;
+}
+.ds-info .dn {
+  width: 80%;
+}
+.ds-info .dn .name {
+  max-width: 62%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ds-info .dn .id {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ds-info .dn .sex {
+  width: 0.44rem;
+  height: 0.44rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ds-info .zht {
+  padding: 0 0.2rem;
+  font-size: 0.48rem;
+  line-height: 0.64rem;
+  border-radius: 0.1rem;
+}
+.ds-info .zx {
+  color: #e13953;
+  border: 1px solid #e13953;
+}
+.ds-info .lx {
+  color: #999;
+  border: 1px solid #999;
+}
+
+.mo .ds-cent {
+  padding: 0.2rem 0 0.4rem;
+}
+
+.ds-cent {
+  font-size: 0.48rem;
+}
+.ds-cent .ds-c-top {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ds-cent .ds-c-top .age {
+  color: #e13953;
+  font-size: 0.6rem;
+}
+.ds-cent .ds-c-bot {
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.ds-bot {
+  font-size: 0.48rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.ds-bot .mi {
+  color: #e13953;
+  font-size: 0.56rem;
+}
+
+.li-bot {
+  margin-top: 0.6rem;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.li-bot a {
+  width: 33%;
+  float: left;
+  color: #999;
+  text-align: center;
+  font-size: 0.56rem;
+  line-height: 1.44rem;
+}
+.li-bot a .iconfont {
+  font-size: 0.56rem;
+}
+.li-bot a .icon-xinfeng {
+  font-size: 0.64rem;
+}
+.li-bot a div {
+  color: #999;
+  display: inline-block;
+}
+
+.qie li {
+  width: 46.5%;
+  float: left;
+  font-size: 0.44rem;
+}
+.qie li img {
+  width: 100%;
+  height: 6.3rem;
+}
+.qie li .ds-top {
+  padding-top: 0.2rem;
+}
+.qie li .dn {
+  width: 75%;
+}
+.qie li .ds-cent {
+  padding: 0.1rem 0;
+}
+.qie li .li-bot {
+  border-top: 0;
+  padding-bottom: 0.4rem;
+}
+.qie li .li-bot .iconfont {
+  display: block;
+  line-height: 0.6rem;
+}
+.qie li .li-bot a:nth-child(1) {
+  width: 15%;
+}
+.qie li .li-bot a:nth-child(2) {
+  width: 70%;
+}
+.qie li .li-bot a:nth-child(3) {
+  width: 15%;
+}
+.qie li .li-bot div {
+  color: #999;
+  display: block;
+  font-size: 0.44rem;
+  line-height: 0.8rem;
+}
+.qie li:nth-child(even) {
+  float: right;
+}
+
+/*# sourceMappingURL=j-single.css.map */

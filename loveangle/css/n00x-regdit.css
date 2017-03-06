@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+html, body {
+  width: 100%;
+  height: 100%; }
+
+#regedit-warp {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; }
+  #regedit-warp .title-font {
+    font-size: 0.88rem;
+    text-align: center;
+    height: 5.7rem;
+    line-height: 5.7rem;
+    color: #333333;
+    font-weight: bold; }
+  #regedit-warp h4:first-of-type {
+    font-size: 0.88rem;
+    text-align: center;
+    height: 3.56rem;
+    line-height: 3.56rem;
+    color: #333333;
+    font-weight: bold; }
+  #regedit-warp .reg-input-item {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 0.6rem; }
+    #regedit-warp .reg-input-item input {
+      font-size: 0.6rem;
+      padding: .2rem;
+      box-sizing: border-box; }
+    #regedit-warp .reg-input-item .fl {
+      width: 24%; }
+    #regedit-warp .reg-input-item .fr {
+      width: 74%; }
+      #regedit-warp .reg-input-item .fr input {
+        height: 2rem;
+        font-size: 0.48rem; }
+      #regedit-warp .reg-input-item .fr .get-yanzheng {
+        display: inline-block;
+        width: 4rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        font-size: 0.44rem;
+        border: 1px solid #e7e7e7;
+        border-radius: 0.4rem;
+        color: #8c8c8c;
+        margin-top: 0.5rem; }
+        #regedit-warp .reg-input-item .fr .get-yanzheng:active {
+          color: #fff;
+          background: #e13953;
+          border: 1px solid #e13953; }
+    #regedit-warp .reg-input-item:first-of-type .fr input {
+      width: 100%; }
+    #regedit-warp .reg-input-item:last-of-type .fr input {
+      width: 55%; }
+  #regedit-warp .sure-mine {
+    height: 2.4rem;
+    line-height: 2.4rem;
+    position: relative; }
+    #regedit-warp .sure-mine * {
+      /*@include textHeight(Rem(120));*/
+      display: inline-block; }
+    #regedit-warp .sure-mine .choose-click {
+      font-style: normal;
+      position: absolute;
+      right: 0;
+      top: 0.6rem;
+      text-align: center;
+      z-index: 99;
+      width: 2.6rem;
+      height: 1rem;
+      line-height: 1rem;
+      border: 1px solid #e7e7e7;
+      border-radius: 2rem; }
+      #regedit-warp .sure-mine .choose-click:active {
+        background: #ba2c42;
+        color: #fff;
+        border: 1px solid transparent; }
+      #regedit-warp .sure-mine .choose-click input[type='file'] {
+        position: absolute;
+        width: 2.6rem;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -moz-opacity: 0;
+        left: 0;
+        top: -.1rem;
+        FILTER: alpha(opacity=0);
+        /*androd*/
+        appearance: none;
+        /*下拉框去掉右侧图标*/
+        -moz-appearance: none;
+        -webkit-appearance: none; }
+  #regedit-warp .choose-input input {
+    width: 40%; }
+  #regedit-warp .reg-submit {
+    width: 100%;
+    height: 1.72rem;
+    line-height: 1.72rem;
+    margin-top: 1.6rem;
+    text-align: center;
+    background: #e13953;
+    color: #fff;
+    font-size: 0.64rem; }
+    #regedit-warp .reg-submit:active {
+      background: #ba2c42; }
+
+.submit-button {
+  font-size: 0.64rem;
+  display: block;
+  width: 5.52rem;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  text-align: center;
+  background: #e13953;
+  color: #fff;
+  margin-top: 4rem; }
+  .submit-button:active {
+    background: #ba2c42; }
+
+/*# sourceMappingURL=n00x-regdit.css.map */

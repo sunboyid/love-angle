@@ -1,0 +1,249 @@
+@charset "utf-8";
+@import "mixin";
+/*人才招聘*/
+body{
+    background: #f0f0f0;
+    padding: 0;
+}
+.page,.page-group{
+    background: #f9f9f9;
+}
+#header-recruit{
+    @include list-flex;
+    background: $white;
+    width: 100%;
+    height: Rem(76);
+    a.header-item{
+        width: 50%;
+        font-size: Rem(28);
+        text-align: center;
+        @include textHeight(Rem(74));
+        position: relative;
+        .line{
+            position: absolute;
+            width: 1px;
+            height: Rem(30);
+            background: $grey-bor;
+            right: 0;
+            top: 50%;
+            margin-top: Rem(- 30 / 2);
+        }
+        .bottom-line{
+            position: absolute;
+            width: Rem(20);
+            height: Rem(6);
+            border-radius: Rem(20);
+            background: transparent;
+            bottom: 0;
+            left: 50%;
+            margin-left: Rem(- 20 / 2);
+        }
+        &.active{
+            color: $main-color;
+            .bottom-line{
+                background: $main-color;
+            }
+        }
+    }
+}
+.sm-ui-warp{
+    width: 100%;
+    height: 86%;
+    position: relative;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+#header-recruit{
+    position: relative;
+    #choose-place{
+        @include textHeight(Rem(76));
+        p{
+            background: #fff;
+        }
+    }
+    a.edit-link{
+        color: $main-color;
+        position: absolute;
+        right: Rem(50);
+        top: 0;
+        font-size: Rem(30);
+    }
+}
+#choose-place{
+    height: Rem(100);
+    line-height: Rem(100);
+    text-align: left;
+    .inp-pos{
+        position: relative;
+        height: 100%;
+        width: Rem(270);
+        i.iconfont{
+            position: absolute;
+            right: Rem(-24);
+            top: 55%;
+            margin-top: Rem(-18);
+            font-size: Rem(24);
+            line-height: normal;
+        }
+        input,p{
+            width: 100%;
+            height: 100%;
+            background: #f9f9f9;
+            font-size: Rem(28);
+            padding-left: Rem(60);
+            position: absolute;
+        }
+        input{
+            z-index: 20;
+            opacity: 0;
+        }
+        p{
+            z-index: 10;
+            overflow: hidden;
+            @include font-els(1);
+        }
+    }
+}
+
+.recruit-warp{
+    width: 100%;
+    padding: 0 Rem(50);
+    box-sizing: border-box;
+    .recruit-list{
+        width: 100%;
+        padding: Rem(60) Rem(30);
+        box-sizing: border-box;
+        background: $white;
+        border-radius: Rem(10);
+        margin-bottom: Rem(30);
+    }
+    .list-header{
+        width: 100%;
+        h4{
+            font-size: Rem(30);
+            margin-right: Rem(30);
+        }
+        span{
+            color: $main-color;
+            font-size: Rem(30);
+        }
+        .list-header-show{
+            font-size: Rem(24);
+            margin: Rem(20) 0;
+        }
+        .show-time{
+            color: $grey1;
+            font-size: Rem(24);
+            padding-bottom: Rem(22);
+            border-bottom: $border-bottom;
+        }
+    }
+    .list-content{
+        width: 100%;
+        padding: Rem(20) 0;
+        p{
+            font-size: Rem(24);
+            line-height: Rem(60);
+        }
+    }
+}
+.recruit-show-warp{
+    width: 100%;
+    padding: 0 Rem(50);
+    box-sizing: border-box;
+    margin-top: Rem(20);
+    li{
+        padding: Rem(20) 0;
+        border-bottom: $border-bottom;
+        &:last-of-type{
+            border-bottom: 1px solid transparent;
+        }
+    }
+    
+    .img-warp{
+        width: 26%;
+        padding-top: Rem(8);
+        img{
+            width: Rem(150);
+            height: Rem(150);
+        }
+    }
+    .message-warp{
+        width: 74%;
+    }
+    .message-header{
+        span{
+            font-size: Rem(24);
+            @include font-els(1);
+        }
+        .user-name{
+            width: Rem(100);
+            font-size: Rem(30);
+        }
+        .user-age{
+            font-size: Rem(30);
+            color: $main-color;
+        }
+        .user-type{
+            width: Rem(200);
+        }
+        .user-address{
+            width: Rem(130);
+            margin-left: Rem(10);
+        }
+    }
+    .message-con{
+        font-size: Rem(24);
+    }
+}
+.max-long-warp{
+    width: 100%;
+    .max-long-head{
+        margin-top: Rem(40);
+        padding:Rem(20) 0;
+        text-align: center;
+        img{
+            width: Rem(190);
+            height: Rem(190);
+        }
+    }
+    
+    .max-long-list{
+        padding: 0 Rem(50);
+        line-height: Rem(100);
+        //@include textHeight(Rem(100));
+        font-size: Rem(30);
+        border-bottom: $border-bottom;
+        .max-lont-item{
+            position: relative;
+            i.iconfont{
+                position: absolute;
+                right: 0;
+                top: 50%;
+                margin-top: Rem(-40);
+                font-size: Rem(24);
+                color: $grey2;
+            }
+        }
+        .left-text{
+            width: 33%;
+        }
+        .left-input{
+            width: 64%;
+            height: Rem(80);
+            background: transparent;
+        }
+        &:last-of-type{
+            border-bottom: 1px solid transparent;
+        }
+    }
+    .form-submit{
+        @include footerSubmit();
+        margin: Rem(80) 0;
+    }
+}
+
+
+

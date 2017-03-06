@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "mixin";
+.page .content {
+    background: #fff;
+    padding-top: Rem(76);
+}
+
+h3 {
+    font-size: Rem(44);
+    text-align: center;
+    line-height: Rem(150);
+}
+
+form {
+    padding: 0 4% 2.6rem;
+    font-size: Rem(30);
+}
+
+.item {
+    line-height: Rem(100);
+    border-bottom: 1px solid #ececec;
+    .ret {
+        float: left;
+    }
+    .sub {
+        float: right;
+    }
+    .pub {
+        margin: Rem(80) 0;
+        color: #fff;
+        width: 47%;
+        line-height: Rem(88);
+        background: $main-color;
+    }
+}
+
+.item-person {
+    position: relative;
+    .icon1 {
+        position: absolute;
+        right: 0;
+        color: $grey1;
+    }
+}
+
+.items {
+    position: relative;
+    .icon2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $grey1;
+    }
+}
+
+label {
+    width: 30%;
+}
+
+.item>input {
+    width: 70%;
+}
+
+.item input {
+    line-height: Rem(99);
+}
+
+.item-content {
+    border-bottom: 1px solid #ececec;
+    .label {
+        width: 100%;
+    }
+}
+
+.item-content .extra-msg {
+    width: 100%;
+    height: Rem(180);
+    line-height: Rem(40);
+    border: 1px solid $grey3;
+    padding-left: Rem(20);
+    padding-top: Rem(20);
+    box-sizing: border-box;
+    &:focus {
+        border: 1px solid $main-color;
+    }
+    box-sizing: border-box;
+    font-size: Rem(25);
+    border: 1px solid #d5d5d5;
+}
+
+.more-img {
+    width: 100%;
+    @include list-flex();
+    .img-up-warp{
+        width: Rem(157);
+        height: Rem(112);
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: Rem(157);
+            height: Rem(112);
+            z-index: 8;
+        }
+        input[type="file"]{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: Rem(157);
+            height: Rem(112);
+            z-index: 9;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            FILTER: alpha(opacity=0);
+            /*androd*/
+            appearance: none;
+            /*下拉框去掉右侧图标*/
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            //visibility: hidden;
+        }
+    }
+}

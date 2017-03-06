@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css?ver=2">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/n-40x-recruit.css">
+    <title>招聘列表</title>
+</head>
+<body>
+<header id="header-recruit">
+    <section id="choose-place">
+        <div class="inp-pos clear">
+            <input type="text" value="北京" readonly id="place-choose">
+            <p>北京</p>
+            <i class="iconfont icon-down"></i>
+        </div>
+        <a href="#" class="edit-link">
+            <i class="iconfont icon-fabu"></i>
+            我要发布
+        </a>
+    </section>
+</header>
+
+
+<div class="sm-ui-warp">
+    <div class="page-group">
+        <div class="page">
+            <div class="content">
+                <ul class="recruit-show-warp">
+                    <!--无数据-->
+                    <p id="none"> ---- 暂无数据 ----- </p>
+                    <!--有数据 渲染每个li-->
+                    <li class="clear">
+                        <a href="#" class="clear">
+                            <div class="fl img-warp">
+                                <img src="../imgs/j-ds1.png" alt="">
+                            </div>
+                            <div class="fl message-warp">
+                                <div class="message-header clear">
+                                    <span class="user-name fl">王小萌</span>
+                                    <strong class="user-age fl">28</strong>
+                                    <span class="user-type fl">（1.75.硕士.离婚)</span>
+                                    <span class="user-address fl">河南 内乡县</span>
+                                </div>
+                                <div class="message-con">
+                                    <p> 手机：<span>13895960707</span></p>
+                                    <p>专业：<span>工商管理</span></p>
+                                    <p>薪资要求：<span>25000</span></p>
+                                    <p>求职岗位：<span>主持人</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="clear">
+                        <a href="#" class="clear">
+                            <div class="fl img-warp">
+                                <img src="../imgs/j-ds1.png" alt="">
+                            </div>
+                            <div class="fl message-warp">
+                                <div class="message-header clear">
+                                    <span class="user-name fl">王小萌</span>
+                                    <strong class="user-age fl">28</strong>
+                                    <span class="user-type fl">（1.75.硕士.离婚)</span>
+                                    <span class="user-address fl">河南 内乡县</span>
+                                </div>
+                                <div class="message-con">
+                                    <p> 手机：<span>13895960707</span></p>
+                                    <p>专业：<span>工商管理</span></p>
+                                    <p>薪资要求：<span>25000</span></p>
+                                    <p>求职岗位：<span>主持人</span></p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--公共底部-->
+<footer id="public-footer-warp">
+    <a href="#" class="active footer-item" >
+        <i class="iconfont icon-footer-heart"></i>
+        <p>首页</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-liaotian"></i>
+        <p>聊天</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-naozhong"></i>
+        <p>消息</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-geren"></i>
+        <p>我的</p>
+    </a>
+</footer>
+
+<!--四级联动选择器-->
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/zepto.min.js"></script>
+<script>
+    $.config = {router: false};
+</script>
+<script src="../js/four-link.js"></script>
+<script src="../js/sm.min.js"></script>
+<script src="../js/EventHand.js"></script>
+<script>
+    $(function(){
+        
+        //绑定函数
+        //todo 好像要单独做处理
+        fourLink($('#place-choose'),function(){
+            $('#place-choose').parents(".inp-pos").find('p').html($('#place-choose').val());
+        });
+        $.init();
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+body {
+  width: 100%;
+  padding-top: 2.6rem;
+}
+
+html .zhe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 20000;
+}
+html .show {
+  left: 10%;
+  top: 25%;
+  width: 80%;
+  height: 25%;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
+  font-size: 0.6rem;
+  position: fixed;
+  background: #fff;
+  z-index: 30000;
+}
+html .show div {
+  margin: 0.2rem auto;
+}
+html .show .man-num,
+html .show .woman-num {
+  color: #e13953;
+}
+
+a.act-new {
+  width: 95%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #e13953;
+  margin: 0 auto;
+}
+
+.main {
+  margin-bottom: 4rem;
+}
+
+.content {
+  box-sizing: border-box;
+}
+
+.section {
+  width: 95%;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 1rem;
+  margin: 0.6rem auto;
+  margin-bottom: 0;
+}
+.section .act-head {
+  font-size: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+.section .act-head img {
+  width: 0.58rem;
+  height: 0.58rem;
+  vertical-align: middle;
+}
+.section .act-head .icon1 {
+  color: #e13953;
+  font-size: 0.6rem;
+}
+.section .act-head span {
+  display: inline-block;
+  width: 1.84rem;
+  height: 0.64rem;
+  line-height: 0.64rem;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 0.1rem;
+  font-size: 0.44rem;
+  color: #e13953;
+  border: 1px solid #e13953;
+}
+.section .act-info {
+  padding-bottom: 1.4rem;
+}
+.section .act-img {
+  width: 100%;
+  height: 6rem;
+  margin: 0 atuo;
+}
+.section .act-title {
+  width: 10rem;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 0.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.section .enlist-num {
+  font-size: 0.56rem;
+  float: left;
+}
+.section .enlist-num img {
+  width: 0.58rem;
+  height: 0.58rem;
+  vertical-align: inline-block;
+}
+.section .enlist-num span {
+  color: #e13953;
+}
+.section .enlist-num .act-pub {
+  color: #333333;
+  font-weight: 700;
+}
+.section .see {
+  float: right;
+  font-size: 0.5rem;
+  color: #e13953;
+}
+.section .see .icon-right {
+  font-size: 0.5rem;
+}
+.section .act-same {
+  clear: both;
+  font-size: 0.5rem;
+}
+.section .act-same .act-pub {
+  font-weight: 700;
+}
+.section .act-same .act-pub span {
+  font-weight: normal;
+}
+.section .act-gift {
+  padding-top: 0.6rem;
+}
+.section .icon2 {
+  font-size: 0.6rem;
+}
+.section .save {
+  width: 100%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  font-size: 0.6rem;
+  color: #fff;
+  text-align: center;
+  background-color: #e13953;
+  margin: 0.8rem auto;
+}
+.section .intro-act span {
+  color: #666666;
+}
+.section textarea {
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
+  width: 98%;
+  color: #999999;
+}
+.section .act-sm {
+  height: 4rem;
+}
+
+.line {
+  width: 100%;
+  height: 0.24rem;
+  background-color: #f5f5f5;
+}
+
+.line2 {
+  margin-top: 1rem;
+  width: 100%;
+  height: 0.24rem;
+  background-color: #f5f5f5;
+}
+
+.section-two {
+  border-top: 0;
+  margin-top: 0;
+}
+.section-two .act-head {
+  clear: both;
+  padding-bottom: 0.6rem;
+}
+.section-two .act-left {
+  float: left;
+}
+.section-two .act-left span {
+  color: #999999;
+  border: 1px solid #999999;
+}
+.section-two .act-del {
+  float: right;
+  color: #e13953;
+}
+.section-two .act-img {
+  clear: both;
+}
+
+/*# sourceMappingURL=act-manage.css.map */

@@ -1,0 +1,221 @@
+@charset "utf-8";
+@import "mixin";
+ 
+html, body,p{
+  margin: 0 !important;  
+  padding: 0 !important;
+}
+
+.page {
+	.content {
+		background-color: $white;
+	}
+}
+#header {
+    padding-top: Rem(30);
+    width: 100%;
+    position: relative;
+    .line {
+        position: absolute;
+        top: Rem(35);
+        height: Rem(28);
+        width: 1%;
+        background-color: $main-color;
+    }
+    .container {
+        width: 95%;
+        margin: 0 auto;
+
+        .act-img {
+            font-size: Rem(28);
+        }
+		
+		.act-info {
+			margin-top: Rem(50);
+		}
+
+   //      .offer-add {
+   //      	float: left;
+   //      	vertical-align: middle;
+   //      	width: Rem(210);
+   //      	height: Rem(210);
+			// margin-right: Rem(20);
+			// margin-bottom: Rem(20);
+			// position: relative;
+			// overflow: hidden;
+			// img{
+			// 	width: Rem(210);
+			// 	height: Rem(210);
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+   //              z-index: 19;
+			// }
+			// input[type="file"]{
+   //              width: Rem(210);
+   //              height: Rem(210);
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+   //              @include fileHide();
+   //              z-index: 20;
+			// }
+   //      }
+
+        .act-msg {
+        	float: left;
+        	margin-left: Rem(50);
+        	padding-top: Rem(65);
+        }
+        p {
+        	color: $grey1;
+        	font-size: Rem(28);
+        }
+    }
+}
+
+.line2 {
+	clear:both;
+	width: 100%;
+	height: Rem(10);
+	background-color: #f5f5f5;
+}
+.main {
+	clear: both;
+	margin-bottom: Rem(200);
+}
+section {
+	position: relative;
+	padding-top: Rem(30);
+    width: 100%;
+    .line {
+        position: absolute;
+        top: Rem(35);
+        height: Rem(28);
+        width: Rem(6);
+        background-color: $main-color;
+    }
+    .bl {
+        width: 95%;
+        margin: 0 auto;
+		position: relative;
+        .act-img {
+            font-size: Rem(28);
+        }
+
+		input {
+			margin-top: Rem(30);
+			border: 1px solid $grey-bor;
+			width: 99%;
+			height: Rem(85);
+			line-height: Rem(85);
+			padding-left: Rem(28);
+			font-size: Rem(28);
+			box-sizing: border-box;
+		}
+		.timer {
+			margin-top: Rem(30);
+			border: 1px solid $grey-bor;
+			height: Rem(85);
+			line-height: Rem(85);
+			padding-left: Rem(28);
+			font-size: Rem(28);
+			box-sizing: border-box;
+		}
+		.msg-act {
+			margin-top: Rem(30);
+			padding-left: Rem(28);
+			border: 1px solid $grey-bor;
+			width: 99%;
+			font-size: Rem(28);
+			height: Rem(225);
+		}
+	
+		.money {
+			position: absolute;
+			right: Rem(20);
+			top: Rem(90);
+			font-size: Rem(28);
+		}
+		
+		.person-pub {
+			margin-top: Rem(30);
+			width: Rem(245);
+			height: Rem(85);
+			border: 1px solid $grey-bor;
+		}
+		.connect-person {
+			width: 35%;
+		}
+		.phone {
+			font-size: Rem(22);
+		}
+
+		.mobile {
+			width: 50%;
+		}
+    }
+
+}
+
+.connect {
+	font-size: Rem(28);
+}
+
+.act-time {
+	position: relative;
+
+	.icon-down {
+		position: absolute;
+		top: Rem(90);
+		right: Rem(15);
+		color: $grey1;
+	}
+}
+.sub {
+	display: block;
+	width: 95%;
+	height: Rem(85);
+	color: #fff;
+	background-color: $main-color;
+	margin: Rem(70) auto;
+}
+
+.more-img {
+    width: 100%;
+    // @include list-flex();
+    .img-up-warp{
+        width: Rem(157);
+        height: Rem(112);
+        float: left;
+        margin: 0 Rem(10);
+        margin-bottom: Rem(10);
+        position: relative;
+        img{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: Rem(157);
+            height: Rem(112);
+            z-index: 8;
+        }
+        input[type="file"]{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: Rem(157);
+            height: Rem(112);
+            z-index: 9;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            -moz-opacity: 0;
+            FILTER: alpha(opacity=0);
+            /*androd*/
+            appearance: none;
+            /*下拉框去掉右侧图标*/
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            //visibility: hidden;
+        }
+    }
+}

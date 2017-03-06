@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/*$*/
+/*主色调*/
+$main-color:#e13953;
+/*次级色调*/
+$second-color: left;
+/*点选颜色*/
+$active-color:#ba2c42;
+/*黑色*/
+$black:#333333;
+/*底部1px横线*/
+$border-bottom:1px solid #e7e7e7;
+/*底部10px*/
+
+$grey1:#999999;
+$grey2:#8c8c8c;
+$grey3:#dedede;
+$grey4:#666666;
+$grey-bor:#d5d5d5;
+$white:#fff;
+
+$footer-border:1px solid #f9f8f9;
+
+$auto-pad:0 4%;
+/*rem计算*/
+@function Rem($px){
+    @return ($px / 50) * 1rem;
+}
+
+$border-gery-line: Rem(10) solid #f5f5f5;
+/*mixin*/
+/*padding*/
+@mixin box-padding($padding){
+    padding: $padding;
+    box-sizing: border-box;
+}
+/*n行文字溢出隐藏*/
+@mixin font-els($line){
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line;
+    -webkit-box-orient: vertical;
+}
+/*单行文字垂直居中*/
+@mixin textHeight($num){
+    height: $num;
+    line-height: $num;
+}
+/*清除表单默认样式*/
+@mixin auto-style(){
+    -webkit-appearance: none;
+    appearance: none;
+}
+/*一行flex*/
+@mixin line-flexbox(){
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+/*列表flex*/
+@mixin list-flex(){
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+@mixin fileHide(){
+    FILTER: alpha(opacity=0); /*androd*/
+    appearance:none;  /*下拉框去掉右侧图标*/
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -moz-opacity:0;
+}
+@mixin footerSubmit(){
+    display: block;
+    width: 100%;
+    @include textHeight(Rem(78));
+    background: $main-color;
+    color: $white;
+    font-size: Rem(32);
+}
+
+@mixin flex_box_between(){
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: center;
+}

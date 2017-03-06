@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    
+}
+.content{
+    padding:1.56rem 0 2.6rem;
+}
+.story{
+    .item{
+        padding:0 4%;
+        background:#fff;
+        font-size:Rem(30);
+        margin-bottom:Rem(10);
+        img{
+            width:100%;
+            height:Rem(298);
+            margin:0.5rem 0;
+        }
+    }
+}
+.fw-name{
+    .fw-left{
+        font-weight:900;
+        color:$main-color;
+        display:inline-block;
+        .icon-heart{
+            color:$main-color;
+            font-size:Rem(30);
+        }
+        .fl{
+            color:$main-color;
+        }
+        .name{
+            max-width:Rem(260);
+            @include font-els(1)
+        }
+    }
+    .fw-right{
+        display:inline-block;
+    }
+}
+.label{
+    color:#ff779b;
+    span{
+        float:left;
+        padding:0 0.2rem;
+        font-size:Rem(24);
+        line-height:Rem(32);
+        border-radius:Rem(3);
+        margin:0.4rem 0.4rem 0 0;
+        border:1px solid #ff779b;
+    }
+}
+.anniversary{
+    padding:0.4rem 0;
+    .ann-tit{
+        font-size:Rem(42);
+    }
+    .ann-txt{
+        color:#666;
+        font-size:Rem(26);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

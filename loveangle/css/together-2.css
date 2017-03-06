@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+body {
+  background-color: #f9f8f9;
+  padding-top: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  position: fixed;
+  top: 0;
+  margin-bottom: 0.6rem;
+}
+.header a {
+  display: block;
+  flex: 1;
+  height: 0.56rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.56rem;
+  color: #333333;
+}
+.header .tog-med {
+  color: #e13953;
+}
+.header .line {
+  font-size: 0.56rem;
+  color: #dedede;
+}
+.header .line2 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  background-color: #e13953;
+  width: 0.4rem;
+  height: 0.12rem;
+  border-radius: 0.12rem;
+}
+.header .tog-med {
+  flex: 1;
+}
+.header .tog-ext {
+  flex: 1;
+}
+
+form {
+  padding: 0 4% 2.6rem;
+  font-size: 0.6rem;
+}
+
+.item {
+  line-height: 2rem;
+  border-bottom: 1px solid #ececec;
+}
+.item .ret {
+  float: left;
+}
+.item .sub {
+  float: right;
+}
+.item .pub {
+  margin: 1.32rem 0;
+  color: #fff;
+  width: 47%;
+  line-height: 1.76rem;
+  background: #e13953;
+}
+
+.item-person {
+  position: relative;
+}
+.item-person .icon1 {
+  position: absolute;
+  right: 0;
+  color: #999999;
+}
+
+.items {
+  position: relative;
+}
+.items .icon2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #999999;
+}
+
+label {
+  width: 30%;
+}
+
+.item > input {
+  width: 70%;
+}
+
+.item input {
+  background-color: #f9f8f9;
+  line-height: 1.98rem;
+}
+
+.item-content {
+  border-bottom: 0 none;
+}
+
+.item-content .extra-msg {
+  width: 100%;
+  height: 3.6rem;
+  line-height: 0.8rem;
+  border: 1px solid #dedede;
+  padding-left: 0.4rem;
+  padding-top: 0.4rem;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.5rem;
+  border: 1px solid #d5d5d5;
+}
+.item-content .extra-msg:focus {
+  border: 1px solid #e13953;
+}
+
+/*# sourceMappingURL=together-2.css.map */

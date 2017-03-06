@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f8f9;
+    padding-top: Rem(75);
+}
+
+.header {
+	width: 100%;
+	@include textHeight(Rem(75));
+	background-color: $white;
+	display: flex;
+	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 10000;
+	margin-bottom: Rem(30);
+	
+	a {
+		display: block;
+		flex: 1;
+		height: Rem(28);
+		vertical-align: middle;
+		text-align: center;
+		font-size: Rem(28);
+	}
+	.person-offer {
+		color: $main-color;
+	}
+	.line {
+		font-size: Rem(28);
+		color: #dedede;
+	}
+	.line2 {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 23%;
+		background-color: $main-color;
+		width: Rem(20);
+		height: Rem(6);
+		border-radius: Rem(6);
+	}
+	.dw-offer {
+		flex: 1;
+		text-align: center
+	}
+}
+.section {
+	width: Rem(690);
+	margin: 0 auto;
+	height: Rem(235);
+	padding: Rem(30) 0;
+	box-sizing: border-box;
+	position: relative;
+	border-bottom: 1px solid #dedede;
+	img {
+		display: block;
+		float: left;
+		width: Rem(175);
+		height: Rem(175);
+	}
+	.msg {
+		vertical-align: middle;
+		position: absolute;
+		left: Rem(200);
+		top: Rem(24);
+		font-size: Rem(24);
+		margin-left: Rem(30);
+		
+		.name-offer {
+			margin-bottom: Rem(10);
+		}
+		.name {
+			font-size: Rem(30);
+			font-weight: 700;
+		}
+		.pub {
+			font-size: Rem(20);
+		}
+	}
+}
+
+.footer {
+	display: block;
+	margin: Rem(150) auto;
+	width: Rem(690);
+	font-size: Rem(30);
+	color: $white;
+	@include textHeight(Rem(86));
+	text-align: center;
+	background-color: $main-color;
+}
+a.footer {
+	color: $white;
+}
+

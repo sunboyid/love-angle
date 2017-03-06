@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+body {
+  padding-bottom: 2.2rem;
+}
+
+#publie-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.head {
+  width: 100%;
+  height: 10rem;
+  margin-top: 1.56rem;
+  position: relative;
+  text-align: center;
+  background: url("../imgs/j-ds-bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+.head .tx {
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  margin-top: 1.2rem;
+}
+.head .n-name {
+  color: #fff;
+  font-size: 0.68rem;
+}
+.head .id {
+  color: #fff;
+  font-size: 0.56rem;
+}
+.head .sex {
+  top: 1.2rem;
+  right: 5.9rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid #fff;
+}
+.head .zht {
+  right: 4%;
+  top: 0.5rem;
+  color: #fff;
+  font-size: 0.56rem;
+  position: absolute;
+}
+.head .h-bot {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background: rgba(249, 103, 93, 0.5);
+}
+.head .h-bot li {
+  width: 32%;
+  float: left;
+  text-align: center;
+}
+.head .h-bot li .h-txt {
+  color: #fff;
+  font-size: 0.44rem;
+}
+.head .h-bot li .h-num {
+  color: #fff;
+  font-size: 0.84rem;
+}
+.head .h-bot span {
+  width: 2%;
+  float: left;
+  color: #fff;
+  opacity: 0.3;
+  font-size: 0.44rem;
+  line-height: 1.84rem;
+}
+
+.imgsInfo {
+  padding: 0 4% 0.3rem;
+}
+.imgsInfo a {
+  width: 23.3%;
+  float: left;
+  margin: 0.3rem 0.3rem 0 0;
+}
+.imgsInfo a img {
+  width: 100%;
+  height: 3.24rem;
+}
+.imgsInfo a:nth-child(4) {
+  margin-right: 0;
+}
+.imgsInfo a:nth-child(8) {
+  margin-right: 0;
+}
+
+.gr-info {
+  padding: 0 4%;
+  font-size: 0.6rem;
+  border-top: 0.2rem solid #f5f5f5;
+}
+.gr-info .tit {
+  padding-top: 0.6rem;
+}
+.gr-info .tit img {
+  width: 0.58rem;
+  height: 0.58rem;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+.gr-info .tit .icon-biaoqian, .gr-info .tit .icon-xiaolian {
+  color: #e13953;
+  font-size: 0.72rem;
+  vertical-align: middle;
+}
+.gr-info .item {
+  line-height: 2rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.gr-info .item .fr {
+  text-align: right;
+}
+.gr-info .bq {
+  padding-top: 0.4rem;
+}
+.gr-info .bq span {
+  float: left;
+  color: #ff779b;
+  padding: 0 0.2rem;
+  font-size: 0.48rem;
+  line-height: 0.64rem;
+  border-radius: 0.06rem;
+  margin-right: 0.4rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #ff779b;
+}
+.gr-info .db {
+  font-size: 0.52rem;
+  padding: 0.1rem 0 0.6rem 0;
+}
+
+.cz {
+  border-top: 0.2rem solid #f5f5f5;
+  border-bottom: 0.2rem solid #f5f5f5;
+}
+.cz a {
+  width: 32%;
+  float: left;
+  color: #999;
+  font-size: 0.56rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.cz a .iconfont {
+  font-size: 0.56rem;
+}
+.cz a:active {
+  color: #e13953;
+}
+.cz .gz {
+  width: 32%;
+  float: left;
+  color: #999;
+  font-size: 0.56rem;
+  text-align: center;
+  line-height: 1.5rem;
+  display: inline-block;
+}
+.cz .gz .iconfont {
+  font-size: 0.56rem;
+}
+.cz span {
+  width: 2%;
+  float: left;
+  color: #ccc;
+  font-size: 0.4rem;
+  line-height: 1.5rem;
+}
+
+.mi {
+  top: 76%;
+  right: 16%;
+  width: 2.28rem;
+  height: 2.28rem;
+  position: fixed;
+  border-radius: 50%;
+}
+.mi img {
+  wdith: 100%;
+  height: 100%;
+}
+
+#public-footer-warp {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+/*# sourceMappingURL=j-ds-details.css.map */

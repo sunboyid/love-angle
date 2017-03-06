@@ -1,0 +1,94 @@
+@charset "utf-8";
+@import "mixin";
+body {
+    padding-top: Rem(76);
+}
+.help-warp{
+    padding: Rem(50) Rem(30);
+    box-sizing: border-box;
+    border-bottom: $border-gery-line;
+    .help-item{
+        font-size: Rem(30);
+        height: Rem(68);
+        line-height: Rem(68);
+        span{
+            display: inline-block;
+            margin-right: Rem(20);
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.leaving-mes-warp{
+    padding: Rem(50) Rem(30);
+    box-sizing: border-box;
+    .header-list{
+        width: 100%;
+        @include textHeight(Rem(40));
+        font-size: Rem(26);
+        span{
+            display: inline-block;
+            &.active{
+                color: $main-color;
+            }
+        }
+        .down-line{
+            width: 1px;
+            height: Rem(40);
+            margin: 0 Rem(20);
+            font-style: normal;
+            color: $grey3;
+        }
+    }
+    .text-area{
+        margin-top: Rem(30);
+        width: 100%;
+        height: Rem(200);
+        textarea{
+            width: 100%;
+            height: 100%;
+            border: 1px solid $grey3;
+            padding: Rem(20);
+            box-sizing: border-box;
+            &:focus{
+                border: 1px solid $main-color;
+            }
+        }
+    }
+    .submit-input{
+       @include footerSubmit;
+        margin-top: Rem(50);
+    }
+}
+
+/*
+#public-footer-warp{
+    @include line-flexbox;
+    border-top:1px solid $grey-bor;
+    padding: Rem(12) 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .footer-item{
+        width: 25%;
+        //@include textHeight(Rem(78));
+        display: inline-block;
+        //padding: Rem(20) 0;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: Rem(18);
+        color: $grey2;
+        &.active{
+            color: $main-color;
+        }
+        i.iconfont{
+            display: block;
+            font-size: Rem(50);
+        }
+        p{
+            display: inline-block;
+        }
+    }
+}*/

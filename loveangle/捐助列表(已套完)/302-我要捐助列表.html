@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/myoffer-list.css">
+    <title>我要捐助列表</title>
+</head>
+
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="content">
+                <header id="publie-header">
+                    <a href="#" class=" header-item clear">搜索 <span></span></a>
+                    <a href="#" class=" header-item clear">活动 <span></span></a>
+                    <a href="#" class=" header-item clear">认证 <span></span></a>
+                    <a href="#" class=" header-item clear">推荐</a>
+                </header>
+                <h3>捐助申请</h3>
+                <form action="" class="zh-info">
+                    <div class="item clear">
+                        <label for="name" class="fl">捐款人或单位:</label>
+                        <input type="text" class="fl name" id="name">
+                    </div>
+                    <div class="item item-person clear">
+                        <label for="forobj" class="fl">捐助对象:</label>
+                        <input type="text" class="fl n-name" id="forobj">
+                        <i class="iconfont icon-down icon1"></i>
+                    </div>
+                    <div class="item clear">
+                        <label for="tel" class="fl">电话:</label>
+                        <input type="text" class="phone" id="tel">
+                    </div>
+                    <div class="item clear">
+                        <label for="mail" class="fl">邮箱:</label>
+                        <input type="text" class="email" data-toggle='date' id="mail" />
+                    </div>
+                    <div class="item items clear">
+                        <label for="" class="fl">捐助项目:</label>
+                        <input type="text" class="offer-item" />
+                        <i class="iconfont icon-down icon2"></i>
+                    </div>
+                    <div class="item clear" id="donation">
+                        <label for="cd" class="fl">捐助场地:</label>
+                        <input type="text" class="postion" id="cd" />
+                    </div>
+                    <div class="item item-content clear">
+                        <label for="sq" class="fl">申请内容:
+                        </label>
+                        <textarea placeholder="请输入申请内容！" class="extra-msg" id="sq"></textarea>
+                        <div class="more-img clear">
+                            <div class="fl img-up-warp">
+                                <img src="../imgs/offer-add.png" alt="" class="ig img-pos" data-src="../imgs/offer-add.png">
+                                <input type="file" class="files" value="选择" multiple>
+                            </div>
+                            <div class="fl img-up-warp">
+                                <img src="../imgs/offer-add.png" alt="" class="ig img-pos" data-src="../imgs/offer-add.png">
+                                <input type="file" class="files" value="选择" multiple>
+                            </div>
+                            <div class="fl img-up-warp">
+                                <img src="../imgs/offer-add.png" alt="" class="ig img-pos" data-src="../imgs/offer-add.png">
+                                <input type="file" class="files" value="选择" multiple>
+                            </div>
+                            <div class="fl img-up-warp">
+                                <img src="../imgs/offer-add.png" alt="" class="ig img-pos" data-src="../imgs/offer-add.png">
+                                <input type="file" class="files" value="选择" multiple>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item clear">
+                        <input type="button" class="pub ret" value="重置">
+                        <input type="submit" class="pub sub" value="提交申请">
+                    </div>
+                    
+                </form>
+                <footer id="public-footer-warp">
+                    <a href="#" class="active footer-item">
+                        <i class="iconfont icon-footer-heart"></i>
+                        <p>首页</p>
+                    </a>
+                    <a href="#" class=" footer-item">
+                        <i class="iconfont icon-liaotian"></i>
+                        <p>聊天</p>
+                    </a>
+                    <a href="#" class=" footer-item">
+                        <i class="iconfont icon-naozhong"></i>
+                        <p>消息</p>
+                    </a>
+                    <a href="#" class=" footer-item">
+                        <i class="iconfont icon-geren"></i>
+                        <p>我的</p>
+                    </a>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/sm.min.js"></script>
+<script src="../js/imageShow.js"></script>
+<script>
+$(function() {
+
+    
+    $('.sub').on('click', function() {
+        var Name = $('.name').val(); //捐助人或单位
+        var nName = $('.n-name').val(); //捐助对象
+        var phone = $('.phone').val(); //电话
+        var email = $('.email').val(); //邮箱
+        var item = $('.offer-item').val(); //捐助项目
+        var pos = $('.postion').val(); //捐助场地
+        var extraMsg = $('.extra-msg').val(); //申请内容
+        var regPhone = /(^(\d{3,4}-)?\d{7,8})$|0?(13|14|15|18)[0-9]{9}/; //正则验证电话
+        var regEmail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //正则验证邮箱
+
+        if (Name == '') {
+            alert('请输入捐助人或单位！');
+            return false
+        }
+
+        if (nName == '') {
+            alert('请选择捐助对象！');
+            return false
+        }
+
+        if (!regPhone.test(phone)) {
+            alert('电话号码格式不正确！');
+            return false
+        }
+
+        if (!regEmail.test(email)) {
+            alert('邮箱格式不正确！');
+            return false
+        }
+
+        if (item == '') {
+            alert('请选择捐助项目！');
+            return false
+        }
+
+        if (pos == '') {
+            alert('请输入捐助场地！');
+            return false
+        }
+
+        if (extraMsg == '') {
+            alert('请输入申请内容！');
+            return false
+        }
+
+        $('.zh-info').submit();
+    });
+    
+    // $('.more-img').on('change','input[type="file"]',function(ev){
+    //     var URL = ev.target.value;
+    //     var URLType = URL.split('.')[1];
+    //     var attrImg = $(this).prev().attr('data-src');
+    //     URL = URL.replace(/\\/g,"/");
+    //     console.log(URL);
+    //     if(URLType =='jpg' || URLType == 'png' || URLType == 'gif'){
+    //         $(this).prev().attr('src',"file:///"+URL);
+    //     }else {
+    //         alert('只允许上传jpg,png,gif格式的图片');
+    //         $(this).parent().find('img').attr('src',URL);
+    //     }
+    // });
+
+    // 重置
+
+    $('.ret').on('click',function() {
+        $('.name').val('');
+        $('.n-name').val('');
+        $('.phone').val('');
+        $('.email').val('');
+        $('.offer-item').val('');
+        $('.postion').val('');
+        $('.extra-msg').val('');
+    });
+    //捐助对象
+    $(".n-name").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-left">按钮</button>\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身份</h1>\
+        </header>',
+        cols: [{
+            textAlign: 'center',
+            values: ['平台', '红娘', '会务', '个人']
+        }]
+    });
+
+    //捐助项目
+    $(".offer-item").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-left">按钮</button>\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择项目</h1>\
+        </header>',
+        cols: [{
+            textAlign: 'center',
+            values: ['资金', '场地', '人才', '物资']
+        }]
+    });
+    var offerArr = [{
+        name:'资金',
+        key:'zhu_money',
+        labelHtml:'捐助资金 ：',
+        type:'number',
+        place:'请输入捐助资金'
+    },{
+        name:'场地',
+        key:'zhu_address',
+        labelHtml:'捐助场地 ：',
+        type:'text',
+        place:'请输入捐助场地'
+    },{
+        name:'人才',
+        key:'zhu_talent',
+        labelHtml:'捐助人才 ：',
+        type:'text',
+        place:'请输入捐助人才'
+    },{
+        name:'物资',
+        key:'zhu_supplies',
+        labelHtml:'捐助物资 ：',
+        type:'text',
+        place:'请输入捐助物资'
+    }];
+    $('.offer-item').on('change',function(){
+        var __this = $(this);
+       $.each(offerArr,function(i,e){
+           if(e.name === __this.val()){
+               console.log(e,$('#donation label').html());
+               $('#donation label').html('');
+               $('#donation label').html(e.labelHtml);
+               $('#donation input').val("").attr('type',e.type).attr('placeholder',e.place).attr("name",e.key);
+               return;
+           }
+       })
+    });
+    //上传的图片展示
+    $('.more-img').on('change','input[type="file"]',function(ev){
+        var link = ev.target.value;
+        console.log(link);   
+        var linkTpye = link.split('.')[1];
+        if(linkTpye !== 'png' && linkTpye !== 'jpg' && linkTpye !== 'gif'){
+            alert('只能上传png，jpg，gif格式的图片');
+            return false;
+        }else {
+            var objUrl = getObjectURL(this.files[0]);
+            if (objUrl) {
+                $(this).prev().attr("src", objUrl);
+            }
+        }
+    })
+    
+})
+</script>

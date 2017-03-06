@@ -1,0 +1,211 @@
+@charset "utf-8";
+@import "mixin"; 
+body {
+    width: 100%;
+    padding-top: Rem(130);
+    // background-color: #f5f5f5;
+}
+
+html {
+    .zhe {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 20000;
+    }
+    .show {
+        left: 10%;
+        top: 25%;
+        width: 80%;
+        height: 25%;
+        padding-top: Rem(100);
+        box-sizing: border-box;
+        text-align: center;
+        display: none;
+        font-size: Rem(30);
+        position: fixed;
+        background: #fff;
+        z-index: 30000;
+        div {
+            margin: Rem(10) auto;
+        }
+        .man-num,
+        .woman-num {
+            color: $main-color;
+        }
+    }
+}
+
+a.act-new {
+    width: 95%;
+    height: Rem(85);
+    line-height: Rem(85);
+    font-size: Rem(30);
+    color: $white;
+    text-align: center;
+    background-color: $main-color;
+    margin: 0 auto;
+}
+
+.main {
+    margin-bottom: Rem(200);
+}
+
+.content {
+    // margin-bottom: Rem(200);
+    box-sizing: border-box;
+}
+
+.section {
+    width: 95%;
+    border-top: 1px solid #f2f2f2;
+    // border-bottom: 1px solid #f2f2f2;
+    padding-top: Rem(50);
+    margin: Rem(30) auto;
+    margin-bottom: 0;
+    .act-head {
+        font-size: Rem(30);
+        margin-bottom: Rem(30);
+        img {
+            width: Rem(29);
+            height: Rem(29);
+            vertical-align: middle;
+        }
+        .icon1 {
+            color: $main-color;
+            font-size: Rem(30);
+        }
+        span {
+            display: inline-block;
+            width: Rem(92);
+            height: Rem(32);
+            line-height: Rem(32);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: Rem(5);
+            font-size: Rem(22);
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+    .act-info {
+        padding-bottom: Rem(70);
+    }
+    .act-img {
+        width: 100%;
+        height: Rem(300);
+        margin: 0 atuo;
+    }
+    .act-title {
+        width: Rem(500);
+        margin-top: Rem(20);
+        margin-bottom: Rem(50);
+        font-size: Rem(36);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .enlist-num {
+        font-size: Rem(28);
+        float: left;
+        img {
+            width: Rem(29);
+            height: Rem(29);
+            vertical-align: inline-block;
+        }
+        span {
+            color: $main-color;
+        }
+        .act-pub {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+    .see {
+        float: right;
+        font-size: Rem(25);
+        color: $main-color;
+        .icon-right {
+            font-size: Rem(25);
+        }
+    }
+    .act-same {
+        clear: both;
+        font-size: Rem(25);
+        .act-pub {
+            font-weight: 700;
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+    .act-gift {
+        padding-top: Rem(30);
+    }
+    .icon2 {
+        font-size: Rem(30);
+    }
+    .save {
+        width: 100%;
+        height: Rem(85);
+        line-height: Rem(85);
+        font-size: Rem(30);
+        color: $white;
+        text-align: center;
+        background-color: $main-color;
+        margin: Rem(40) auto;
+    }   
+    .intro-act span {
+        color: $grey4;
+    }
+    textarea {
+        padding-left: Rem(10);
+        padding-top: Rem(10);
+        width: 98%;
+        color: $grey1;
+    }
+    .act-sm {
+        height: Rem(200);
+    }
+    .gift-act {}
+}
+
+.line {
+    width: 100%;
+    height: Rem(12);
+    background-color: #f5f5f5;
+}
+
+.line2 {
+    margin-top: Rem(50);
+    width: 100%;
+    height: Rem(12);
+    background-color: #f5f5f5;
+}
+
+.section-two {
+    border-top: 0;
+    margin-top: 0;
+    .act-head {
+        clear: both;
+        padding-bottom: Rem(30);
+    }
+    .act-left {
+        float: left;
+        span {
+            color: $grey1;
+            border: 1px solid $grey1;
+        }
+    }
+    .act-del {
+        float: right;
+        color: $main-color;
+    }
+    .act-img {
+        clear: both;
+    }
+}

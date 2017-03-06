@@ -1,0 +1,87 @@
+@charset "utf-8";
+@import "mixin";
+
+.page .content{
+    background: #fff;
+}
+h3{
+    font-size:Rem(44);
+    text-align:center;
+    line-height:Rem(150);
+}
+form{
+    padding:0 4%;
+    font-size:Rem(30);
+}
+.item{
+    line-height:Rem(100);
+    border-bottom:1px solid #ececec;
+}
+label{
+    width:30%;
+}
+.item>input{
+    width:70%;
+}
+.item input{
+    line-height:Rem(99);
+}
+.item .name{
+    width:64%;
+}
+.item .saomiao{
+    width:6%;
+    color:#999;
+    display:inline-block;
+}
+.saomiao .icon-saomiao{
+    color:#999;
+    font-size:1rem;
+}
+.item .code-l{
+    width:30%;
+}.item .code-r{
+     width:70%;
+ }
+ .vercode{
+     width:50%;
+ }
+ .code-r .code{
+     width:44%;
+     color:#333;
+     text-align:center;
+     margin-top:Rem(20);
+     line-height:Rem(60);
+     background:#e7e7e7;
+     display:inline-block;
+ }
+ .sub{
+     display: block;
+     width:92%;
+     color:#fff;
+     line-height:Rem(90);
+     background:$main-color;
+     margin: Rem(40) auto Rem(40) auto;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

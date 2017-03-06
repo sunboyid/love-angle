@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/together-2.css">
+    <title>合作2</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="202-1-合作.html" class="tog-pos">场地合作</a>
+        <span class="line">|</span>
+        <a href="#" class="tog-med">媒体合作</a>
+        <span class="line">|</span>
+        <a href="202-3-合作.html" class="tog-ext">其他合作</a>
+        <span class="line2"></span>
+    </div>
+    <form action="" class="zh-info">
+        <div class="item clear">
+            <label for="" class="fl">合作标题:</label>
+            <input type="text" class="fl name">
+        </div>
+        <div class="item item-person clear">
+            <label for="" class="fl">选择区域:</label>
+            <input type="text" class="fl n-name pos">
+            <i class="iconfont icon-down icon1"></i>
+        </div>
+        <div class="item items clear">
+            <label for="" class="fl">单位或个人:</label>
+            <input type="text" class="offer-item" />
+            <i class="iconfont icon-down icon2"></i>
+        </div>
+        <div class="item clear">
+            <label for="" class="fl">手机号码:</label>
+            <input type="text" class="email phone" data-toggle='date' />
+        </div>
+        <div class="item item-content clear">
+            <label for="" class="fl">合作描述:</label>
+            <textarea placeholder="请输入申请内容！" class="extra-msg"></textarea>
+        </div>
+        <div class="item clear">
+            <input type="button" class="pub ret" value="重置">
+            <input type="submit" class="pub sub" value="提交申请">
+        </div>
+    </form>
+    <footer id="public-footer-warp" class="footer">
+        <a href="#" class="active footer-item">
+            <i class="iconfont icon-footer-heart"></i>
+            <p>首页</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-liaotian"></i>
+            <p>聊天</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-naozhong"></i>
+            <p>消息</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-geren"></i>
+            <p>我的</p>
+        </a>
+    </footer>
+</body>
+
+</html>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/sm.min.js"></script>
+<script src="../js/sm-city-picker.min.js"></script>
+<script>
+$(function() {
+
+    $('.sub').on('click',function() {
+        var title = $('.name').val();//合作标题
+        var pos = $('.pos').val();//选择区域
+        var identity = $('.offer-item').val();//选择身份
+        var phone = $('.phone').val();//手机号码
+        var together = $('.extra-msg').val();//合作描述
+        var regPhone = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+
+        if(title == '') {
+            alert('请输入合作标题！');
+            return false;
+        }
+
+        if(pos == '') {
+            alert('请选择区域！');
+            return false;
+        }
+
+        if(identity == '') {
+            alert('请选择身份！');
+            return false;
+        } 
+
+        if(!regPhone.test(phone)) {
+            alert('手机号码格式不对！');
+            return false;
+        }
+
+        if(together == '') {
+            alert('请输入申请内容！');
+            return false;
+        }
+    });
+    
+      // 重置信息
+    $('.ret').on('click',function() {
+        $('.name').val('');
+        $('.pos').val('');
+        $('.offer-item').val('');
+        $('.phone').val('');
+        $('.extra-msg').val('');
+    });
+    
+    $('.offer-item').picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-left">按钮</button>\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身份</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['单位', '个人']
+            }
+        ]
+    });
+
+
+    $(".pos").cityPicker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择地址</h1>\
+        </header>'
+    });
+
+
+})
+</script>

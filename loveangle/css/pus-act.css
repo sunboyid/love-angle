@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+html, body, p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.page .content {
+  background-color: #fff;
+}
+
+#header {
+  padding-top: 0.6rem;
+  width: 100%;
+  position: relative;
+}
+#header .line {
+  position: absolute;
+  top: 0.7rem;
+  height: 0.56rem;
+  width: 1%;
+  background-color: #e13953;
+}
+#header .container {
+  width: 95%;
+  margin: 0 auto;
+}
+#header .container .act-img {
+  font-size: 0.56rem;
+}
+#header .container .act-info {
+  margin-top: 1rem;
+}
+#header .container .act-msg {
+  float: left;
+  margin-left: 1rem;
+  padding-top: 1.3rem;
+}
+#header .container p {
+  color: #999999;
+  font-size: 0.56rem;
+}
+
+.line2 {
+  clear: both;
+  width: 100%;
+  height: 0.2rem;
+  background-color: #f5f5f5;
+}
+
+.main {
+  clear: both;
+  margin-bottom: 4rem;
+}
+
+section {
+  position: relative;
+  padding-top: 0.6rem;
+  width: 100%;
+}
+section .line {
+  position: absolute;
+  top: 0.7rem;
+  height: 0.56rem;
+  width: 0.12rem;
+  background-color: #e13953;
+}
+section .bl {
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+}
+section .bl .act-img {
+  font-size: 0.56rem;
+}
+section .bl input {
+  margin-top: 0.6rem;
+  border: 1px solid #d5d5d5;
+  width: 99%;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  padding-left: 0.56rem;
+  font-size: 0.56rem;
+  box-sizing: border-box;
+}
+section .bl .timer {
+  margin-top: 0.6rem;
+  border: 1px solid #d5d5d5;
+  height: 1.7rem;
+  line-height: 1.7rem;
+  padding-left: 0.56rem;
+  font-size: 0.56rem;
+  box-sizing: border-box;
+}
+section .bl .msg-act {
+  margin-top: 0.6rem;
+  padding-left: 0.56rem;
+  border: 1px solid #d5d5d5;
+  width: 99%;
+  font-size: 0.56rem;
+  height: 4.5rem;
+}
+section .bl .money {
+  position: absolute;
+  right: 0.4rem;
+  top: 1.8rem;
+  font-size: 0.56rem;
+}
+section .bl .person-pub {
+  margin-top: 0.6rem;
+  width: 4.9rem;
+  height: 1.7rem;
+  border: 1px solid #d5d5d5;
+}
+section .bl .connect-person {
+  width: 35%;
+}
+section .bl .phone {
+  font-size: 0.44rem;
+}
+section .bl .mobile {
+  width: 50%;
+}
+
+.connect {
+  font-size: 0.56rem;
+}
+
+.act-time {
+  position: relative;
+}
+.act-time .icon-down {
+  position: absolute;
+  top: 1.8rem;
+  right: 0.3rem;
+  color: #999999;
+}
+
+.sub {
+  display: block;
+  width: 95%;
+  height: 1.7rem;
+  color: #fff;
+  background-color: #e13953;
+  margin: 1.4rem auto;
+}
+
+.more-img {
+  width: 100%;
+}
+.more-img .img-up-warp {
+  width: 3.14rem;
+  height: 2.24rem;
+  float: left;
+  margin: 0 0.2rem;
+  margin-bottom: 0.2rem;
+  position: relative;
+}
+.more-img .img-up-warp img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.14rem;
+  height: 2.24rem;
+  z-index: 8;
+}
+.more-img .img-up-warp input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3.14rem;
+  height: 2.24rem;
+  z-index: 9;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  FILTER: alpha(opacity=0);
+  /*androd*/
+  appearance: none;
+  /*下拉框去掉右侧图标*/
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+/*# sourceMappingURL=pus-act.css.map */

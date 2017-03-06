@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    
+}
+.content{
+    background:#fff;
+    padding:1.56rem 4% 2.6rem;
+}
+.news-item{
+    padding:0.7rem 0;
+    font-size:Rem(28);
+    border-bottom:1px solid #f1f1f1;
+    .tx{
+        width:Rem(122);
+        height:Rem(122);
+    }
+    .news-cont{
+        width:78%;
+    }
+}
+.news-top{
+    .news-top-l{
+        width:76%;
+        .name{
+            max-width:48%;
+            @include font-els(1);
+            display:inline-block;
+        }
+        .id{
+            @extend .name;
+            margin:0 0.2rem;
+            display:inline-block;
+        }
+        .sex{
+            width:Rem(24);
+            height:Rem(24);
+            margin-top:0.2rem;
+            display:inline-block;
+        }
+    }
+    .zht{
+        padding:0 0.1rem;
+        color:$main-color;
+        font-size:Rem(22);
+        line-height:Rem(28);
+        border-radius:Rem(3);
+        border:1px solid $main-color;
+    }
+}
+.news-cent{
+    font-size:Rem(22);
+    margin-top:0.1rem;
+    .age{
+        font-weight:900;
+        font-size:Rem(28);
+        color:$main-color;
+    }
+}
+.news-bot{
+    font-size:Rem(22);
+    .year{
+        font-weight:900;
+    }
+    .dui{
+        font-weight:900;
+        color:$main-color;
+    }
+    .time{
+        color:#999;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

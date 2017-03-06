@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import "mixin";
+#header-recruit{
+    background: $white;
+    width: 100%;
+    .header-show{
+        width: 100%;
+        height: Rem(96);
+        padding: 0 Rem(50);
+    }
+    .iconfont{
+        height: Rem(96);
+        line-height: Rem(110);
+        color: $grey1;
+    }
+    a.text-show{
+        display: block;
+        @include textHeight(Rem(96));
+        color: $main-color;
+        font-size: Rem(28);
+    }
+    .table-header{
+        width: 100%;
+        height: Rem(74);
+        line-height: Rem(74);
+        padding: 0 Rem(50);
+        background: #f2f2f2;
+        font-size: Rem(24);
+        div.fl{
+            height: 100%;
+            @include font-els(1);
+            text-align: center;
+        }
+    }
+}
+.sm-ui-warp{
+    width: 100%;
+    height: 79%;
+    position: relative;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    background: $white;
+    .table-warp{
+        width: 87%;
+        margin: 0 Rem(50);
+        .tr-warp{
+            width: 100%;
+            @include textHeight(Rem(112));
+            border-bottom: $border-bottom;
+            &:last-of-type{
+                border-bottom: 1px solid transparent;
+            }
+            div.fl{
+                @include textHeight(Rem(112));
+                @include font-els(1);
+                font-size: Rem(28);
+                text-align: center;
+                .img-warp{
+                    width: Rem(75);
+                    height: Rem(75);
+                    position: relative;
+                    margin-top: Rem(15);
+                    img{
+                        width: Rem(75);
+                        height: Rem(75);
+                    }
+                    .this-lv{
+                        position: absolute;
+                        border: Rem(2) solid $white;
+                        border-radius: Rem(100);
+                        font-size: Rem(14);
+                        width: Rem(30);
+                        @include textHeight(Rem(20));
+                        text-align: center;
+                        color: $white;
+                        background: #333;
+                        height: auto;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    .no_1{
+                        background: #f0cb00;
+                    }
+                    .no_2{
+                        background: #b9b9b9;
+                    }
+                    .no_3{
+                        background: #bd9850;
+                    }
+                    .no_other{
+                        background: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.rank-s{
+    width: 12%;
+    margin-right: 1%;
+}
+.name-s{
+    width: 15%;
+    margin-right: 2%;
+}
+.sex-s{
+    width: 9%;
+    margin-right: 2%;
+}
+.type-s{
+    width: 22%;
+    margin-right: 2%;
+}
+.get-s{
+    width: 15%;
+    margin-right: 2%;
+}
+.address-s{
+    width: 16%;
+    margin-right: 2%;
+}

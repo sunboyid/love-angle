@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/pus-act.css">
+    <title>发布相亲活动</title>
+</head>
+<style>
+</style>
+
+<body>
+    <div class="page-group">
+        <div class="page page-current">
+            <div class="content">
+                <form action="" class="sub-info">
+                    <header id="header">
+                        <div class="line"></div>
+                        <div class="container">
+                            <div class="act-img">活动图片</div>
+                            <div class="act-info more-img">
+                                <div class="img-up-warp add">
+                                    <img src="../imgs/offer-add.png" alt="" class="offer-add">
+                                    <input type="file" class="files" value="选择" name="img[]">
+                                </div>
+                                <div class="img-up-warp add2">
+                                    <img src="../imgs/offer-add.png" alt="" class="offer-add ">
+                                    <input type="file" class="files" value="选择" name="img[]">
+                                </div>
+                                <div class="img-up-warp add3">
+                                    <img src="../imgs/offer-add.png" alt="" class="offer-add">
+                                    <input type="file" class="files" value="选择" name="img[]">
+                                </div>
+                                <div class="img-up-warp add4">
+                                    <img src="../imgs/offer-add.png" alt="" class="offer-add">
+                                    <input type="file" class="files" value="选择" name="img[]">
+                                </div>
+                                <!-- <div class="act-msg">
+                                    <p>最少一个,</p>
+                                    <p>最多四个没图片上传不成功</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </header>
+                    <div class="line2"></div>
+                    <div class="main">
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl">
+                                <div class="act-img">活动标题：</div>
+                                <input type="text" name="" value="" class="txt" placeholder="请输入活动标题"></input>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl act-time">
+                                <div class="act-img">活动方式：</div>
+                                <i class="iconfont icon-down"></i>
+                                <input type="hidden" value="" name="" class="hid-way" /></input>
+                                <input type="text" name="" value="" class="way" placeholder="请选择活动方式"></input>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl">
+                                <div class="act-img">活动地址：</div>
+                                <input type="text" name="" value="" class="ads" placeholder="请输入活动地址"></input>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl act-time">
+                                <div class="act-img">活动时间：</div>
+                                <i class="iconfont icon-down"></i>
+                                <input type="text" class="timer" data-toggle='date' id="my-input" placeholder="请选择活动时间" name="" value="" />
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl">
+                                <div class="act-img">报名费：</div>
+                                <input type="number" name="" value="" placeholder="自定义金额" class="entry-fee"></input>
+                                <span class="money">元</span>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl">
+                                <div class="act-img">联系人：</div>
+                                <input type="text" value="" name="" class="connect-person person-one">
+                                <span class="phone">电话&nbsp;</span>
+                                <input type="number" value="" name="" class="mobile phone-one">
+                                <input type="text" value="" name="" class="connect-person person-two">
+                                <span class="phone">电话&nbsp;</span>
+                                <input type="number" value="" name="" class="mobile phone-two">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl connect">
+                                <div class="act-img">活动人数：</div>
+                                男&nbsp;<input type="number" name="" value="" class="person-pub man">
+                                &nbsp;&nbsp;女&nbsp;<input type="number" name="" value="" class="person-pub woman">
+                            </div>
+                        </section>
+                        <section>
+                            <div class="line"></div>
+                            <div class="bl">
+                                <div class="act-img">活动说明：</div>
+                                <textarea name="" value="" class="msg-act"></textarea>
+                            </div>
+                        </section>
+                        <input type="submit" value="发布" class="sub">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer id="public-footer-warp" class="footer">
+        <a href="#" class="active footer-item">
+            <i class="iconfont icon-footer-heart"></i>
+            <p>首页</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-liaotian"></i>
+            <p>聊天</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-naozhong"></i>
+            <p>消息</p>
+        </a>
+        <a href="#" class=" footer-item">
+            <i class="iconfont icon-geren"></i>
+            <p>我的</p>
+        </a>
+    </footer>
+</body>
+
+</html>
+<script src="../js/zepto.min.js"></script>
+<script src="../js/imageShow.js"></script>
+<script>
+$.config = {
+    router: false
+}
+</script>
+<script src="../js/sm.min.js"></script>
+<script>
+$(function() {
+    $('.sub').on('click', function() {
+        var title = $('.txt').val();
+        var found = $('.way').val();
+        var address = $('.ads').val();
+        var time = $('.timer').val();
+        var money = $('.entry-fee').val();
+        var personOne = $('.person-one').val();
+        var phoneOne = $('.phone-one').val();
+        var personTwo = $('.person-two').val();
+        var phoneTwo = $('.phone-two').val();
+        var man = $('.man').val();
+        var woman = $('.woman').val();
+        var actMsg = $('.msg-act').val();
+        var regPhone = /^(((13[0-9]{1})|(14[0-9]{1})|(17[0]{1})|(15[0-3]{1})|(15[5-9]{1})|(18[0-9]{1}))+\d{8})$/;
+
+        if (title == '') {
+            alert('请输入活动标题');
+            return false;
+        }
+
+        if (found == '') {
+            alert('请选择活动方式');
+            return false;
+        }
+        if (address == '') {
+            alert('请输入活动地址');
+            return false;
+        }
+
+        if (time == '') {
+            alert('请选择活动时间');
+            return false;
+        }
+
+        if (money == '') {
+            alert('请输入报名费');
+            return false;
+        }
+
+        if (personOne == '' || personTwo == '') {
+            alert('请输入联系人姓名');
+            return false;
+        }
+
+        if (!regPhone.test(phoneOne) || !regPhone.test(phoneTwo)) {
+            alert('手机号码格式不正确');
+            return false;
+        }
+
+        if (man == '' || woman == '') {
+            alert('请输入活动人数');
+            return false;
+        }
+
+        if(actMsg == '') {
+            alert('请输入活动说明');
+            return false;
+        }
+
+    })
+    var arrWay = [
+        {
+            way: '周六日相亲',
+            val: 0
+        },
+        {
+            way: '非固定相亲',
+            val: 1
+        },
+        {
+            way: '户外相亲',
+            val: 2
+        },
+        {
+            way: '其他相亲',
+            val: 3
+        },
+    ]
+    $('.way').on('change',function() {
+        var that = $(this);
+        $.each(arrWay,function(index,ele) {
+            if(ele.way === that.val()) {
+                console.log(ele,$('.hid-way').val());
+                $('.hid-way').val(ele.val);
+                console.log($('.hid-way').val());
+            }
+        })
+       
+    })
+    $('.more-img .img-up-warp').hide();
+    $('.add').show();
+    // 图片展示
+     $('.more-img').on('change','input[type="file"]',function(ev){
+        var link = ev.target.value;
+        var linkTpye = link.split('.')[1];
+        if(linkTpye !== 'png' && linkTpye !== 'jpg' && linkTpye !== 'gif'){
+            alert('只能上传png，jpg，gif格式的图片');
+            return false;
+        }else {
+            var objUrl = getObjectURL(this.files[0]);
+            if (objUrl) {
+                $(this).prev().attr("src", objUrl);
+                $(this).parent().next().show();
+            }
+        }
+    })
+    //活动时间
+    
+    $("#my-input").calendar({
+        value: ['2016-12-22']
+    });
+    //活动方式
+
+     $(".way").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-left">按钮</button>\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身份</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['周六日相亲', '非固定相亲','户外相亲','其他相亲'],
+            }
+        ]
+    });
+})
+</script>

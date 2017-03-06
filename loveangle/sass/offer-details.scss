@@ -1,0 +1,90 @@
+@charset "utf-8";
+@import "mixin";
+
+body {
+    padding-top: Rem(76);
+}
+.section {
+    width: Rem(690);
+    margin: 0 auto;
+    height: Rem(245);
+    padding: Rem(30) 0;
+    box-sizing: border-box;
+    position: relative;
+    border-bottom: 1px solid #dedede;
+    img {
+        display: block;
+        float: left;
+        width: Rem(175);
+        height: Rem(175);
+    }
+    .msg {
+        vertical-align: middle;
+        position: absolute;
+        left: Rem(200);
+        top: Rem(24);
+        font-size: Rem(24);
+        margin-left: Rem(30);
+        .name-offer {
+            margin-bottom: Rem(10);
+        }
+        .name {
+            font-size: Rem(30);
+            font-weight: 700;
+        }
+        .pub {
+            font-size: Rem(20);
+        }
+    }
+    .left-line {
+        display: block;
+        position: absolute;
+        left: Rem(-30);
+        top: Rem(35);
+        height: Rem(28);
+        width: Rem(6);
+        background-color: $main-color;
+    }
+    .offer-info {
+        font-size: Rem(28);
+        font-weight: 700;
+        font-family: "宋体";
+    }
+    .offer-msg {
+        font-size: Rem(28);
+    }
+}
+
+.section-two {
+    width: Rem(690);
+    margin: 0 auto;
+    padding: Rem(30) 0;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: Rem(200);
+    .left-line {
+        display: block;
+        position: absolute;
+        left: Rem(-30);
+        top: Rem(35);
+        height: Rem(28);
+        width: Rem(6);
+        background-color: $main-color;
+    }
+    .offer-info {
+        font-size: Rem(28);
+        font-weight: 700;
+        font-family: "宋体";
+    }
+
+    .offer-msg {
+        margin-top: Rem(10);
+        font-size: Rem(28);
+
+        img {
+        	width: 100%;
+        	height: Rem(300);
+        	margin-top: Rem(30);
+        }
+    }
+}

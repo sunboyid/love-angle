@@ -1,0 +1,270 @@
+@charset "utf-8";
+@import "mixin";
+body {
+    padding-top: Rem(76);
+}
+
+.container {
+    width: Rem(690);
+    margin: 0 auto;
+    padding-top: Rem(30);
+    .head-img {
+        width: Rem(690);
+        height: Rem(300);
+    }
+    .act-title {
+        width: Rem(500);
+        margin-top: Rem(20);
+        font-size: Rem(36);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .act-msg {
+        margin-top: Rem(30);
+        padding-bottom: Rem(30);
+        font-size: Rem(25);
+        border-bottom: 1px solid #f2f2f2;
+        div {
+            color: #797979;
+        }
+        .money {
+            color: $main-color;
+            font-weight: 700;
+        }
+    }
+    .connect {
+        .connect-head {
+            .icon-talk {
+                font-size: Rem(30);
+                color: $main-color;
+                font-weight: 700;
+            }
+            span {
+                font-size: Rem(30);
+                font-weight: 700;
+            }
+        }
+        .connect-msg {
+            span {
+                font-size: Rem(20);
+            }
+        }
+        .btn {
+            width: 100%;
+            @include textHeight(Rem(85));
+            background-color: $main-color;
+            color: $white;
+            font-size: Rem(30);
+            margin-top: Rem(30);
+        }
+    }
+}
+
+.line2 {
+    width: 100%;
+    height: Rem(10);
+    background-color: #f5f5f5;
+    margin-top: Rem(30);
+}
+
+.contain {
+    margin-bottom: Rem(200);
+}
+
+.container1 {
+    width: Rem(690);
+    margin: 0 auto;
+    // margin-bottom: Rem(300);
+    // background-color: pink;
+    padding-top: Rem(22);
+    text-align: center;
+    img {
+        width: Rem(145);
+        height: Rem(133);
+    }
+    .act-head {
+        font-size: Rem(30);
+        .act-man {
+            color: #79cfe8;
+        }
+        .act-woman {
+            color: #ff779b;
+        }
+    }
+    .person-name {
+        position: relative;
+        height: Rem(50);
+        .person-man {
+            width: Rem(25);
+            height: Rem(25);
+            vertical-align: middle;
+        }
+        .person-woman {
+            width: Rem(25);
+            height: Rem(25);
+            vertical-align: middle;
+        }
+        div {
+            font-size: Rem(25);
+            float: left;
+        }
+        .man-left {
+            position: absolute;
+            left: Rem(87);
+        }
+        .woman-right {
+            position: absolute;
+            right: Rem(87);
+        }
+    }
+    .person-item {
+        // height: Rem(550);
+        text-align: left;
+        .items {
+            padding-bottom: Rem(40);
+            display: flex;
+            .item {
+                flex: 1;
+                img {
+                    width: Rem(72);
+                    height: Rem(72);
+                    vertical-align: top;
+                    float: left;
+                }
+                div {
+                    // display: block;
+                    padding-left: Rem(20);
+                    font-size: Rem(22);
+                    float: left;
+                }
+                span {
+                    display: block;
+                }
+                .item-num {
+                    color: $grey4;
+                }
+                .item-age {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+    .icon-down {
+        color: $grey1;
+        width: Rem(25);
+    }
+}
+
+.section {
+    width: 95%;
+    // border-bottom: 1px solid #f2f2f2;
+    margin: Rem(30) auto;
+    margin-bottom: 0;
+    .act-head {
+        font-size: Rem(30);
+        margin-bottom: Rem(30);
+        img {
+            width: Rem(29);
+            height: Rem(29);
+            vertical-align: middle;
+        }
+        .icon1 {
+            color: $main-color;
+            font-size: Rem(30);
+        }
+        span {
+            display: inline-block;
+            width: Rem(92);
+            height: Rem(32);
+            line-height: Rem(32);
+            text-align: center;
+            vertical-align: middle;
+            border-radius: Rem(5);
+            font-size: Rem(22);
+            color: $main-color;
+            border: 1px solid $main-color;
+        }
+    }
+    .act-info {
+        padding-bottom: Rem(70);
+    }
+    .act-img {
+        width: 100%;
+        height: Rem(300);
+        margin: 0 atuo;
+    }
+    .act-title {
+        width: Rem(500);
+        margin-top: Rem(20);
+        margin-bottom: Rem(50);
+        font-size: Rem(36);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .enlist-num {
+        font-size: Rem(28);
+        float: left;
+        img {
+            width: Rem(29);
+            height: Rem(29);
+            vertical-align: inline-block;
+        }
+        span {
+            color: $main-color;
+        }
+        .act-pub {
+            color: $black;
+            font-weight: 700;
+        }
+    }
+    .see {
+        float: right;
+        font-size: Rem(25);
+        color: $main-color;
+        .icon-right {
+            font-size: Rem(25);
+        }
+    }
+    .act-same {
+        clear: both;
+        font-size: Rem(25);
+        .act-pub {
+            font-weight: 700;
+            span {
+                font-weight: normal;
+            }
+        }
+    }
+    .act-gift {
+        padding-top: Rem(30);
+    }
+    .icon2 {
+        font-size: Rem(30);
+    }
+    .save {
+        width: 100%;
+        height: Rem(85);
+        line-height: Rem(85);
+        font-size: Rem(30);
+        color: $white;
+        text-align: center;
+        background-color: $main-color;
+        margin: Rem(40) auto;
+    }
+    .intro-act span {
+        color: $grey4;
+    }
+    textarea {
+        padding-left: Rem(10);
+        padding-top: Rem(10);
+        width: 98%;
+        color: $grey1;
+    }
+    .act-sm {
+        height: Rem(200);
+    }
+    .gift-act {}
+}

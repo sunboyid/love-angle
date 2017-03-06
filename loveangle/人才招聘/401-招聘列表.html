@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/sm.min.css">
+    <link rel="stylesheet" href="../css/public.css?ver=2">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <link rel="stylesheet" href="../css/n-40x-recruit.css">
+    <title>招聘列表</title>
+</head>
+<body>
+<header id="header-recruit">
+    <!--选中的添加active类-->
+    <a href="#" class="header-item active">
+        <span>招聘</span>
+        <i class="line"></i>
+        <i class="bottom-line"></i>
+    </a>
+    <a href="#" class="header-item">
+        <span>求职</span>
+        <i class="bottom-line"></i>
+    </a>
+</header>
+
+
+<div class="sm-ui-warp">
+    <div class="page-group">
+        <div class="page">
+            <div class="content">
+                <section id="choose-place">
+                    <div class="inp-pos">
+                        <input type="text" value="北京" readonly id="place-choose">
+                        <p>北京</p>
+                        <i class="iconfont icon-down"></i>
+                    </div>
+                </section>
+                <!--暂无信息-->
+                <!--<div id="none"> &#45;&#45;&#45;&#45;  暂无信息 -&#45;&#45;&#45;&#45;</div>-->
+                <ul class="recruit-warp">
+                    <li class="recruit-list">
+                        <a href="#">
+                            <div class="list-header clear">
+                                <div class="clear">
+                                    <h4 class="fl">高级管理人员CTO</h4>
+                                    <span class="fl">8K-12K</span>
+                                </div>
+                                <p class="list-header-show">这个职位充满了挑战和压力当然相对于地产广告来说压力和强度都较小一我还有足够的项目驾驭能力...</p>
+                                <p class="show-time">发布时间：2016.04.03  10:09:15</p>
+                            </div>
+                            <div class="list-content">
+                                <p><strong>年龄</strong>：23-35岁之间</p>
+                                <p><strong>身高</strong>：172-180m</p>
+                               <p> <strong>擅长</strong>：高级管理，并有丰富的行业管理经验驾驭压力的能力</p>
+                                <p><strong>行业经验</strong>：5-10年</p>
+                                <p><strong>专职兼职</strong>：专职</p>
+                                <p><strong>办公地点</strong>：北京市朝阳区财富中心E座11F／12F</p>
+                                <p><strong>福利待遇</strong>：五险一金／餐补／下午茶／年度旅行</p>
+                                <p><strong>入职时间</strong>：1个月之内</p>
+                                <p><strong>联系电话</strong>：010-83948569</p>
+                                <p><strong>电子邮箱</strong>：zeent@sina.com.cn</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--公共底部-->
+<footer id="public-footer-warp">
+    <a href="#" class="active footer-item" >
+        <i class="iconfont icon-footer-heart"></i>
+        <p>首页</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-liaotian"></i>
+        <p>聊天</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-naozhong"></i>
+        <p>消息</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-geren"></i>
+        <p>我的</p>
+    </a>
+</footer>
+
+<!--四级联动选择器-->
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/zepto.min.js"></script>
+<script>
+    $.config = {router: false};
+</script>
+<script src="../js/four-link.js"></script>
+<script src="../js/sm.min.js"></script>
+<script src="../js/EventHand.js"></script>
+<script>
+   $(function(){
+       
+       //绑定函数
+       //todo 好像要单独做处理
+       fourLink($('#place-choose'),function(){
+          $('#place-choose').parents(".inp-pos").find('p').html($('#place-choose').val());
+       });
+       $.init();
+   })
+</script>
+</body>
+</html>

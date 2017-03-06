@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import "mixin";
+
+body {
+	background-color: #f9f8f9;
+    padding-top: Rem(75);
+}
+.header {
+	width: 100%;
+	@include textHeight(Rem(75));
+	background-color: $white;
+	display: flex;
+	position: relative;
+    position: fixed;
+    top: 0;
+	margin-bottom: Rem(30);
+	
+	a {
+        display: block;
+		flex: 1;
+		height: Rem(28);
+		vertical-align: middle;
+		text-align: center;
+		font-size: Rem(28);
+        color: $black;
+	}
+	.tog-med{
+		color: $main-color;
+	}
+	.line {
+		font-size: Rem(28);
+		color: #dedede;
+	}
+	.line2 {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 49%;
+		background-color: $main-color;
+		width: Rem(20);
+		height: Rem(6);
+		border-radius: Rem(6);
+	}
+	.tog-med {
+		flex: 1;
+	}
+	.tog-ext {
+		flex: 1;
+	}
+}
+
+form {
+    padding: 0 4% 2.6rem;
+    font-size: Rem(30);
+}
+
+.item {
+    line-height: Rem(100);
+    border-bottom: 1px solid #ececec;
+    .ret {
+        float: left;
+    }
+    .sub {
+        float: right;
+    }
+    .pub {
+        margin: Rem(66) 0;
+        color: #fff;
+        width: 47%;
+        line-height: Rem(88);
+        background: $main-color;
+    }
+}
+
+.item-person {
+    position: relative;
+    .icon1 {
+        position: absolute;
+        right: 0;
+        color: $grey1;
+    }
+}
+
+.items {
+    position: relative;
+    .icon2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $grey1;
+    }
+}
+
+label {
+    width: 30%;
+}
+
+.item>input {
+    width: 70%;
+}
+
+.item input {
+	background-color: #f9f8f9;
+    line-height: Rem(99);
+}
+
+.item-content {
+    border-bottom: 0 none;
+}
+
+.item-content .extra-msg {
+    width: 100%;
+    height: Rem(180);
+    line-height: Rem(40);
+    border: 1px solid $grey3;
+    padding-left: Rem(20);
+    padding-top: Rem(20);
+    box-sizing: border-box;
+    &:focus {
+        border: 1px solid $main-color;
+    }
+    box-sizing: border-box;
+    font-size: Rem(25);
+    border: 1px solid #d5d5d5;
+}

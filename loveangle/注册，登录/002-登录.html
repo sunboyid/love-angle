@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/n002-login.css">
+    <link rel="stylesheet" href="../font/iconfont.css">
+    <title>登录</title>
+</head>
+<body>
+<section id="regedit-warp">
+    <img  class="title" src="../imgs/login.png" alt="">
+    <div class="reg-box">
+        <form action="">
+            <div class="reg-input-item clear">
+                <div class="fl">账号：</div>
+                <div class="fr">
+                    <input type="text" class="phone-num" required="required" placeholder="请输入您的账号">
+                </div>
+            </div>
+            <div class="reg-input-item clear">
+                <div class="fl">密码：</div>
+                <div class="fr">
+                    <input type="password" class="yanzheng" required="required" placeholder="请输入您的密码">
+                </div>
+            </div>
+            <input type="submit" class="reg-submit" value="登录">
+        </form>
+        <div class="fog-pwd">
+            <a href="201-忘记密码.html">忘记密码</a>
+        </div>
+        <div class="zc">
+        <a href="001-注册.html">
+            <img src="../imgs/zcperson.png" alt="">
+            <span class="zc-name">注册</span>    
+        </a>
+        </div>
+    </div>
+</section>
+
+<script src="../js/zepto.min.js"></script>
+<script>
+    $(function(){
+      var regPhone = /^[a-zA-z][a-zA-Z0-9_]{2,9}$/;
+        $('.phone-num').on('change',function(){
+            if($(this).val() == '') {
+              alert('账号不能为空');
+            }else if(!regPhone.test($(this).val())){
+                alert('账号不符合格式');
+            };
+        });                      
+        $('.yanzheng').on('change',function() {
+          var regPwd = /^[0-9_a-zA-Z]{6,20}$/;
+          if($(this).val() == '') {
+            alert('请输入密码');
+          }else if(!regPwd.test($(this).val())) {
+              alert('密码格式不符');
+          };           
+        })
+    })
+</script>
+</body>
+</html>

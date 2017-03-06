@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+    </script>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- 公共头部 -->
+<header id="publie-header">
+    <a href="#" class="act header-item clear">搜索 <span></span></a>
+    <a href="#" class=" header-item clear">活动 <span></span></a>
+    <a href="#" class=" header-item clear">认证 <span></span></a>
+    <a href="#" class=" header-item clear">推荐</a>
+</header>
+<div id="none"> ----  暂无信息 -----</div>
+
+<!--四级联动input-->
+<input type="text" id="four-val">
+
+<input type="file" id="fileElem" multiple accept="image/*" >
+<img src="" alt="展位图" width="100" height="100" id="img">
+<div id="fileList" style="width:200px;height:200px;"></div>
+
+
+<!--公共底部-->
+<footer id="public-footer-warp">
+    <a href="#" class="active footer-item" >
+        <i class="iconfont icon-footer-heart"></i>
+        <p>首页</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-liaotian"></i>
+        <p>聊天</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-naozhong"></i>
+        <p>消息</p>
+    </a>
+    <a href="#" class=" footer-item" >
+        <i class="iconfont icon-geren"></i>
+        <p>我的</p>
+    </a>
+</footer>
+
+<!--四级联动选择器-->
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/zepto.min.js"></script>
+<!--四级联动-->
+<script src="js/four-link.js"></script>
+<!--file 图片展示-->
+<script src="js/imageShow.js"></script>
+<script>
+    $(function(){
+        fourLink($('#four-val'));
+    });
+    //图片上传展示
+    $("#fileElem").change(function(){
+        var objUrl = getObjectURL(this.files[0]) ;
+        console.log("objUrl = "+objUrl) ;
+        if (objUrl) {
+            $("#img").attr("src", objUrl) ;
+        }
+    }) ;
+</script>
+
+</body>
+</html>

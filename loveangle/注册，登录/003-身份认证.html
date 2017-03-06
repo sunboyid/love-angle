@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script>
+        (function(){
+            document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+        })()
+    </script>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/n00x-regdit.css">
+    <title>身份认证</title>
+</head>
+<body>
+<section id="regedit-warp">
+    <h4>身份认证</h4>
+    <div class="reg-box">
+        <form action="" id="user-form">
+            <div class="reg-input-item sure-mine">
+                <span>真实姓名：</span>
+                <input type="text" class="true-name" placeholder="请输入真实姓名" required="required">
+            </div>
+            <div class="reg-input-item sure-mine">
+                <span>身份证号码：</span>
+                <input type="number" class="user-post-number" placeholder="输入15或18位身份证号码" required="required">
+            </div>
+            <div class="reg-input-item sure-mine choose-input">
+                <span>身份证照片：</span>
+                <input type="text" placeholder="7天内完善" readonly class="card-input">
+                <div class="choose-click">
+                    <a href="javascript:;" class="">选择</a>
+                    <input type="file" class="choose-id-card">
+                </div>
+            </div>
+            <div class="reg-input-item sure-mine choose-input">
+                <span>15秒视频：</span>
+                <input type="text" placeholder="7天内完善" readonly class="video-input">
+                <div class="choose-click">
+                    <a href="javascript:;" class="">选择</a>
+                    <input type="file" class="choose-video">
+                </div>
+            </div>
+            <div class="reg-input-item sure-mine">
+                <span>充值状态：</span>
+                <input type="text" value="未完成" readonly>
+            </div>
+           <footer class="sure-footer clear">
+               <a href="#" class="submit-button fl">充 值</a>
+               <input type="submit" class="submit-button fr" value="完成">
+           </footer>
+        </form>
+    </div>
+</section>
+
+<script src="../js/zepto.min.js"></script>
+<script src="../js/isTrue.js"></script>
+<script src="../js/EventHand.js"></script>
+<script>
+    $(function(){
+        $('#user-form').on('submit',function(){
+            //验证姓名
+            //验证身份证
+            if(!/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/.test($('.user-post-number').val()) || !/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}([0-9]|X)$/.test($('.user-post-number').val())){
+                alert('请输入正确的身份证号');
+                return false;
+            }
+        });
+        $('.choose-id-card').on('change',function(ev){
+            EventHand.upFile(ev,$('.card-input'));
+        });
+        $('.choose-video').on('change',function(ev){
+            EventHand.upFile(ev,$('.video-input'));
+        })
+    });
+</script>
+</body>
+</html>

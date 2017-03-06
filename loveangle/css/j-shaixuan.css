@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+#publie-header {
+  top: 0;
+  left: 0;
+  position: fixed;
+}
+
+.content {
+  background: #fff;
+  padding: 1.56rem 4% 3rem;
+}
+.content .tit {
+  font-weight: 900;
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 3rem;
+}
+.content .item {
+  font-size: 0.6rem;
+  line-height: 2.4rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+.content .item .item-left {
+  width: 95%;
+}
+.content .item .item-left .i-tit {
+  width: 20%;
+  line-height: 2.4rem;
+}
+.content .item .item-left input {
+  width: 80%;
+  line-height: 2.4rem;
+}
+.content .item .item-right {
+  width: 5%;
+}
+.content .item .item-right .iconfont {
+  color: #999;
+  font-size: 0.6rem;
+}
+
+.sub {
+  width: 100%;
+  color: #fff;
+  height: 1.8rem;
+  font-size: 0.6rem;
+  margin-top: 1rem;
+  background: #e13953;
+}
+
+#public-footer-warp .iconfont {
+  line-height: 1rem;
+}
+
+/*# sourceMappingURL=j-shaixuan.css.map */

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5rem;
+  background-color: #f9f8f9;
+}
+
+.header {
+  width: 100%;
+  height: 1.5rem;
+  line-height: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  position: relative;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  margin-bottom: 0.6rem;
+}
+.header a {
+  display: block;
+  flex: 1;
+  height: 0.56rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.56rem;
+}
+.header .line {
+  font-size: 0.56rem;
+  color: #dedede;
+}
+.header .line2 {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 23%;
+  background-color: #e13953;
+  width: 0.4rem;
+  height: 0.12rem;
+  border-radius: 0.12rem;
+}
+.header .dw-offer {
+  flex: 1;
+  color: #e13953;
+  text-align: center;
+}
+
+.section {
+  width: 13.8rem;
+  margin: 0 auto;
+  height: 4.7rem;
+  padding: 0.6rem 0;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom: 1px solid #dedede;
+}
+.section img {
+  display: block;
+  float: left;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.section .msg {
+  vertical-align: middle;
+  position: absolute;
+  left: 4rem;
+  top: 0.48rem;
+  font-size: 0.48rem;
+  margin-left: 0.6rem;
+}
+.section .msg .name-offer {
+  margin-bottom: 0.2rem;
+}
+.section .msg .name {
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.section .msg .pub {
+  font-size: 0.4rem;
+}
+
+.footer {
+  display: block;
+  margin: 3rem auto;
+  width: 13.8rem;
+  font-size: 0.6rem;
+  color: #fff;
+  height: 1.72rem;
+  line-height: 1.72rem;
+  text-align: center;
+  background-color: #e13953;
+}
+
+a.footer {
+  color: #fff;
+}
+
+/*# sourceMappingURL=offer-list-2.css.map */

@@ -1,0 +1,35 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    padding:1.56rem 0 2.6rem;
+}
+.news{
+    padding:0 4%;
+}
+.item{
+    width:100%;
+    display:block;
+    font-size:Rem(30);
+    line-height:Rem(120);
+    border-bottom:1px solid #f7f7f7;
+    .info{
+        width:90%;
+        .news-num{
+            color:#fff;
+            padding:0 0.2rem;
+            font-size:Rem(21);
+            margin-top:Rem(45);
+            background:#ff779b;
+            line-height:Rem(28);
+            border-radius:Rem(28);
+        }
+    }
+    .arrow{
+        width:10%;
+        text-align:right;
+        .iconfont{
+            color:#999;
+        }
+    }
+}

@@ -1,0 +1,284 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+/*人才招聘*/
+body {
+  background: #f0f0f0;
+  padding: 0;
+}
+
+.page, .page-group {
+  background: #f9f9f9;
+}
+
+#header-recruit {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: center;
+  background: #fff;
+  width: 100%;
+  height: 1.52rem;
+}
+#header-recruit a.header-item {
+  width: 50%;
+  font-size: 0.56rem;
+  text-align: center;
+  height: 1.48rem;
+  line-height: 1.48rem;
+  position: relative;
+}
+#header-recruit a.header-item .line {
+  position: absolute;
+  width: 1px;
+  height: 0.6rem;
+  background: #d5d5d5;
+  right: 0;
+  top: 50%;
+  margin-top: -0.3rem;
+}
+#header-recruit a.header-item .bottom-line {
+  position: absolute;
+  width: 0.4rem;
+  height: 0.12rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.2rem;
+}
+#header-recruit a.header-item.active {
+  color: #e13953;
+}
+#header-recruit a.header-item.active .bottom-line {
+  background: #e13953;
+}
+
+.sm-ui-warp {
+  width: 100%;
+  height: 86%;
+  position: relative;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+#header-recruit {
+  position: relative;
+}
+#header-recruit #choose-place {
+  height: 1.52rem;
+  line-height: 1.52rem;
+}
+#header-recruit #choose-place p {
+  background: #fff;
+}
+#header-recruit a.edit-link {
+  color: #e13953;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  font-size: 0.6rem;
+}
+
+#choose-place {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: left;
+}
+#choose-place .inp-pos {
+  position: relative;
+  height: 100%;
+  width: 5.4rem;
+}
+#choose-place .inp-pos i.iconfont {
+  position: absolute;
+  right: -0.48rem;
+  top: 55%;
+  margin-top: -0.36rem;
+  font-size: 0.48rem;
+  line-height: normal;
+}
+#choose-place .inp-pos input, #choose-place .inp-pos p {
+  width: 100%;
+  height: 100%;
+  background: #f9f9f9;
+  font-size: 0.56rem;
+  padding-left: 1.2rem;
+  position: absolute;
+}
+#choose-place .inp-pos input {
+  z-index: 20;
+  opacity: 0;
+}
+#choose-place .inp-pos p {
+  z-index: 10;
+  overflow: hidden;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.recruit-warp {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+.recruit-warp .recruit-list {
+  width: 100%;
+  padding: 1.2rem 0.6rem;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+.recruit-warp .list-header {
+  width: 100%;
+}
+.recruit-warp .list-header h4 {
+  font-size: 0.6rem;
+  margin-right: 0.6rem;
+}
+.recruit-warp .list-header span {
+  color: #e13953;
+  font-size: 0.6rem;
+}
+.recruit-warp .list-header .list-header-show {
+  font-size: 0.48rem;
+  margin: 0.4rem 0;
+}
+.recruit-warp .list-header .show-time {
+  color: #999999;
+  font-size: 0.48rem;
+  padding-bottom: 0.44rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.recruit-warp .list-content {
+  width: 100%;
+  padding: 0.4rem 0;
+}
+.recruit-warp .list-content p {
+  font-size: 0.48rem;
+  line-height: 1.2rem;
+}
+
+.recruit-show-warp {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  margin-top: 0.4rem;
+}
+.recruit-show-warp li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.recruit-show-warp li:last-of-type {
+  border-bottom: 1px solid transparent;
+}
+.recruit-show-warp .img-warp {
+  width: 26%;
+  padding-top: 0.16rem;
+}
+.recruit-show-warp .img-warp img {
+  width: 3rem;
+  height: 3rem;
+}
+.recruit-show-warp .message-warp {
+  width: 74%;
+}
+.recruit-show-warp .message-header span {
+  font-size: 0.48rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.recruit-show-warp .message-header .user-name {
+  width: 2rem;
+  font-size: 0.6rem;
+}
+.recruit-show-warp .message-header .user-age {
+  font-size: 0.6rem;
+  color: #e13953;
+}
+.recruit-show-warp .message-header .user-type {
+  width: 4rem;
+}
+.recruit-show-warp .message-header .user-address {
+  width: 2.6rem;
+  margin-left: 0.2rem;
+}
+.recruit-show-warp .message-con {
+  font-size: 0.48rem;
+}
+
+.max-long-warp {
+  width: 100%;
+}
+.max-long-warp .max-long-head {
+  margin-top: 0.8rem;
+  padding: 0.4rem 0;
+  text-align: center;
+}
+.max-long-warp .max-long-head img {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.max-long-warp .max-long-list {
+  padding: 0 1rem;
+  line-height: 2rem;
+  font-size: 0.6rem;
+  border-bottom: 1px solid #e7e7e7;
+}
+.max-long-warp .max-long-list .max-lont-item {
+  position: relative;
+}
+.max-long-warp .max-long-list .max-lont-item i.iconfont {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -0.8rem;
+  font-size: 0.48rem;
+  color: #8c8c8c;
+}
+.max-long-warp .max-long-list .left-text {
+  width: 33%;
+}
+.max-long-warp .max-long-list .left-input {
+  width: 64%;
+  height: 1.6rem;
+  background: transparent;
+}
+.max-long-warp .max-long-list:last-of-type {
+  border-bottom: 1px solid transparent;
+}
+.max-long-warp .form-submit {
+  display: block;
+  width: 100%;
+  height: 1.56rem;
+  line-height: 1.56rem;
+  background: #e13953;
+  color: #fff;
+  font-size: 0.64rem;
+  margin: 1.6rem 0;
+}
+
+/*# sourceMappingURL=n-40x-recruit.css.map */

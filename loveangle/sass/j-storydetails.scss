@@ -1,0 +1,272 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    
+}
+.content{
+    background:#f7f7f7;
+    padding:1.56rem 0 2.6rem;
+}
+.tit{
+    height:Rem(160);
+    background:#fff;
+    text-align:center;
+    position:relative;
+    .line{
+        top:50%;
+        left:50%;
+        height:Rem(1);
+        width:Rem(444);
+        background:#999;
+        position:absolute;
+        margin-left:Rem(-222);
+    }
+    .tit-name{
+        top:0;
+        left:50%;
+        width:Rem(320);
+        background:#fff;
+        font-size:Rem(44);
+        position:absolute;
+        line-height:Rem(160);
+        margin-left:Rem(-160);
+    }
+}
+.me{
+    padding:0 4%;
+    background:#fff;
+    li{
+        float:left;
+        width:30.66%;
+        font-size:Rem(28);
+        img{
+            width:100%;
+            height:Rem(210);
+        }
+    }
+    li:nth-child(2){
+        margin:0 4%;
+    }
+    .p-name{
+        .pnan{
+            max-width:80%;
+            @include font-els(1);
+            display:inline-block;
+            vertical-align:middle;
+        }
+        .sex{
+            width:Rem(24);
+            height:Rem(24);
+            display:inline-block;
+            vertical-align:middle;
+        }
+    }
+    .hl{
+        
+        div{
+            color:$main-color;
+            display:inline-block;
+        }
+        .hl-tit{
+            vertical-align:middle;
+            .iconfont{
+                font-size:Rem(24);
+            }
+        }
+        .hl-name{
+            max-width:54%;
+            @include font-els(1);
+            vertical-align:middle;
+        }
+    }
+    .age{
+        color:#999;
+        font-size:Rem(22);
+        span{
+            color:$main-color;
+            font-size:Rem(34);
+        }
+    }
+    .id{
+        
+    }
+}
+.raise{
+    font-size:Rem(22);
+    padding:0.5rem 0;
+    .raise-item{
+        width:49.5%;
+        .raise-tit{
+            text-align:center;
+        }
+        .raise-num{
+            font-weight:900;
+            font-size:Rem(46);
+            text-align:center;
+        }
+    }
+    .raise-item:nth-child(1){
+        border-right:1px solid #ddd;
+    }
+}
+.lb{
+    padding:0 4%;
+    background:#fff;
+    .lb-cont{
+        padding:0.5rem 0;
+        border-bottom:1px solid #ddd;
+    }
+}
+
+/* swiper插件 */
+.swiper-container {
+    width: 100%;
+    height:Rem(323);
+}
+.swiper-container .swiper-pagination{
+    right:0;
+    width:96%;
+    bottom:0!important;
+    text-align:right;
+    padding-right:0.5rem;
+}
+.swiper-slide img{
+    width:100%;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    width: 0.2rem;
+    height: 0.2rem;
+    background:$main-color;
+}
+.swiper-pagination-bullet{
+    width: 0.15rem;
+    height: 0.15rem;
+    margin: 0 0.1rem;
+    background:#fff;
+}
+/* swiper插件 end */
+
+.person{
+    padding:0.5rem 4%;
+    background:#fff;
+    .tx{
+        width:Rem(98);
+        height:Rem(98);
+        margin-right:Rem(25);
+    }
+    .person-info{
+        width:82%;
+        .person-top{
+            
+            .name{
+                max-width:76%;
+                font-weight:900;
+                font-size:Rem(28);
+                @include font-els(1);
+                display:inline-block;
+                vertical-align:middle;
+            }
+            .hz{
+                color:#999;
+                font-size:Rem(22);
+                display:inline-block;
+                vertical-align:middle;
+            }
+        }
+        .person-bot{
+            font-size:Rem(28);
+        }
+    }
+}
+.story-label{
+    background:#fff;
+    margin:0.2rem 0;
+    padding:0.5rem 4%;
+    .story-tit{
+        font-size:Rem(30);
+        .iconfont{
+            color:$main-color;
+            font-size:Rem(34);
+        }
+    }
+    .label{
+        color:#ff779b;
+        span{
+            float:left;
+            padding:0 0.2rem;
+            font-size:Rem(24);
+            line-height:Rem(32);
+            border-radius:Rem(3);
+            margin:0.4rem 0.4rem 0 0;
+            border:1px solid #ff779b;
+        }
+    }
+}
+.story-cont{
+    background:#fff;
+    padding:0.5rem 4%;
+    .story-tit{
+        font-size:Rem(30);
+        .iconfont{
+            color:$main-color;
+            font-size:Rem(34);
+        }
+    }
+    .story-txt{
+        font-size:Rem(26);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

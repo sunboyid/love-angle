@@ -1,0 +1,212 @@
+@charset "utf-8";
+@import "mixin";
+
+body{
+    padding-bottom:2.2rem;
+}
+#publie-header{
+    top:0;
+    left:0;
+    position:fixed;
+}
+.head{
+    width:100%;
+    height:Rem(500);
+    margin-top:1.56rem;
+    position:relative;
+    text-align:center;
+    background: url('../imgs/j-ds-bg.png') no-repeat;
+    background-size:100% 100%;
+    .tx{
+        width:Rem(210);
+        height:Rem(210);
+        border-radius:50%;
+        margin-top:Rem(60);
+    }
+    .n-name{
+        color:#fff;
+        font-size:Rem(34);
+    }
+    .id{
+        color:#fff;
+        font-size:Rem(28);
+    }
+    .sex{
+        top:Rem(60);
+        right:Rem(295);
+        width:Rem(24);
+        height:Rem(24);
+        border-radius:50%;
+        position:absolute;
+        border:2px solid #fff;
+    }
+    .zht{
+        right:4%;
+        top:0.5rem;
+        color:#fff;
+        font-size:Rem(28);
+        position:absolute;
+    }
+    .h-bot{
+        left:0;
+        bottom:0;
+        width:100%;
+        position:absolute;
+        padding-top:Rem(10);
+        padding-bottom:Rem(10);
+        background:rgba(249,103,93,0.5);
+        li{
+            width:32%;
+            float:left;
+            text-align:center;
+            .h-txt{
+                color:#fff;
+                font-size:Rem(22);
+            }
+            .h-num{
+                color:#fff;
+                font-size:Rem(42);
+            }
+        }
+        span{
+            width:2%;
+            float:left;
+            color:#fff;
+            opacity:0.3;
+            font-size:Rem(22);
+            line-height:Rem(92);
+        }
+    }
+}
+.imgsInfo{
+    padding:0 4% 0.3rem;
+    a{
+        width:23.3%;
+        float:left;
+        margin:0.3rem 0.3rem 0 0;
+        img{
+            width:100%;
+            height:Rem(162);
+        }
+    }
+    a:nth-child(4){
+        margin-right:0
+    }
+    a:nth-child(8){
+        margin-right:0
+    }
+}
+.gr-info{
+    padding:0 4%;
+    font-size:Rem(30);
+    border-top:0.2rem solid #f5f5f5;
+    .tit{
+        padding-top:Rem(30);
+        img{
+            width:Rem(29);
+            height:Rem(29);
+            margin-right:Rem(10);
+            vertical-align:middle;
+        }
+        .icon-biaoqian, .icon-xiaolian{
+            color:$main-color;
+            font-size:Rem(36);
+            vertical-align:middle;
+        }
+    }
+    .item{
+        line-height:Rem(100);
+        border-bottom:1px solid #f2f2f2;
+        .fl{
+            //width:22%;
+        }
+        .fr{
+            //width:78%;
+            text-align:right;
+        }
+    }
+    .bq{
+        padding-top:Rem(20);
+        span{
+            float:left;
+            color:#ff779b;
+            padding:0 0.2rem;
+            font-size:Rem(24);
+            line-height:Rem(32);
+            border-radius:Rem(3);
+            margin-right:Rem(20);
+            margin-bottom:Rem(20);
+            border:1px solid #ff779b;
+        }
+    }
+    .db{
+        font-size:Rem(26);
+        padding:0.1rem 0 0.6rem 0;
+    }
+}
+.cz{
+    border-top:0.2rem solid #f5f5f5;
+    border-bottom:0.2rem solid #f5f5f5;
+   a{
+       width:32%;
+       float:left;
+       color:#999;
+       font-size:Rem(28);
+       text-align:center;
+       line-height:Rem(75);
+       .iconfont{
+           font-size:Rem(28);
+       }
+   }
+    a:active{
+        color:$main-color
+    }
+    .gz{
+        width:32%;
+        float:left;
+        color:#999;
+        font-size:Rem(28);
+        text-align:center;
+        line-height:Rem(75);
+        display:inline-block;
+        .iconfont{
+            font-size:Rem(28);
+        }
+    }
+    span{
+        width:2%;
+        float:left;
+        color:#ccc;
+        font-size:Rem(20);
+        line-height:Rem(75);
+    }
+}
+.mi{
+    top:76%;
+    right:16%;
+    width:Rem(114);
+    height:Rem(114);
+    position:fixed;
+    border-radius:50%;
+    img{
+        wdith:100%;
+        height:100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#public-footer-warp{
+    left:0;
+    bottom:0;
+    position:fixed;
+}

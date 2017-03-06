@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import "mixin";
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#regedit-warp{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    .title-font{
+        font-size: Rem(44);
+        text-align: center;
+        height: Rem(285);
+        line-height: Rem(285);
+        color: $black;
+        font-weight: bold;
+    }
+    h4:first-of-type{
+        font-size: Rem(44);
+        text-align: center;
+        height: Rem(178);
+        line-height: Rem(178);
+        color: $black;
+        font-weight: bold;
+    }
+    .reg-input-item{
+        width: 100%;
+        @include textHeight(Rem(100));
+        border-bottom: $border-bottom;
+        font-size: Rem(30);
+        input{
+            font-size: Rem(30);
+            padding: .2rem;
+            box-sizing: border-box;
+        }
+        .fl{
+            width: 24%;
+        }
+        .fr{
+            width: 74%;
+            input{
+                height: Rem(100);
+                font-size: Rem(24);
+            }
+            .get-yanzheng{
+                display: inline-block;
+                width: Rem(200);
+                height: Rem(40);
+                line-height: Rem(40);
+                text-align: center;
+                font-size: Rem(22);
+                border: $border-bottom;
+                border-radius: Rem(20);
+                color: $grey2;
+                margin-top: Rem(25);
+                &:active{
+                    color: $white;
+                    background: $main-color;
+                    border: 1px solid $main-color;
+                }
+            }
+        }
+        &:first-of-type{
+            .fr{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        &:last-of-type{
+            .fr{
+                input{
+                    width: 55%;
+                }
+            }
+        }
+    }
+    .sure-mine{
+        @include textHeight(Rem(120));
+        position: relative;
+        *{
+            /*@include textHeight(Rem(120));*/
+            display: inline-block;
+        }
+        .choose-click{
+            font-style: normal;
+            position: absolute;
+            right: 0;
+            top: Rem(30);
+            text-align: center;
+            z-index: 99;
+            width: Rem(130);
+            @include textHeight(Rem(50));
+            border: $border-bottom;
+            border-radius: Rem(100);
+            &:active{
+                background: $active-color;
+                color: $white;
+                border: 1px solid transparent;
+            }
+            input[type='file']{
+                position: absolute;
+                width: Rem(130);
+                opacity:0;
+                filter:alpha(opacity=0);
+                -moz-opacity:0;
+                left: 0;
+                top: -.1rem;
+                FILTER: alpha(opacity=0); /*androd*/
+                appearance:none;  /*下拉框去掉右侧图标*/
+                -moz-appearance:none;
+                -webkit-appearance:none;
+                //visibility: hidden;
+            }
+        }
+    }
+    .choose-input{
+        input{
+            width: 40%;
+        }
+    }
+    .reg-submit{
+        width: 100%;
+        @include textHeight(Rem(86));
+        margin-top: Rem(80);
+        text-align: center;
+        background: $main-color;
+        color: $white;
+        font-size: Rem(32);
+        &:active{
+            background: $active-color;
+        }
+    }
+}
+
+
+.submit-button{
+    font-size: Rem(32);
+    display: block;
+    width: Rem(276);
+    @include textHeight(Rem(86));
+    text-align: center;
+    background: $main-color;
+    color: $white;
+    margin-top: Rem(200);
+    &:active{
+        background: $active-color;
+    }
+}

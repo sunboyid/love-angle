@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+</script>
+<link rel="stylesheet" href="../css/public.css?v=2">
+<link rel="stylesheet" href="../css/sm.min.css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../font/iconfont.css">
+<link rel="stylesheet" href="../css/j-matchmaker.css">
+<title>红娘天使</title>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <div class="head clear">
+            <div class="fl qiehuan">
+                <img src="../imgs/j-qh-icon.png" alt="">
+                切换显示
+            </div>
+            <a href="#" class="fr">
+                <i class="iconfont icon-liebiao"></i>
+            </a>
+        </div>
+        <div class="content">
+            <ul class="clear mo">
+                <li class="">
+                    <div class="clear li-top">
+                        <img src="../imgs/j-ds1.png" alt="" class="dsp">
+                        <div class="ds-info">
+                            <div class="ds-top clear">
+                                <div class="dn fl">
+                                    <div class="name">Barbara</div>
+                                    <div class="id">ID: <span>485</span></div>
+                                    <img src="../imgs/j-sex1.png" alt="" class="sex">
+                                </div>
+                                <div class="fr zht zx">在线</div>
+                                <!--<div class="fr zht lx">离线</div>-->
+                            </div>
+                            <div class="ds-cent">
+                                <div class="ds-c-top">
+                                    <spa class="age">28</spa>
+                                    (<spa>1.75m.</spa>
+                                    <spa>硕士.</spa>
+                                    <spa>离婚</spa>)
+                                    <span>哈尔滨－南城</span>
+                                </div>
+                                <div class="ds-c-bot">
+                                    经验：<span class="year">4</span>年 &nbsp;
+                                    成功对数：<span class="dui">1123</span>
+                                </div>
+                            </div>
+                            <div class="ds-bot">
+                                <span>自我介绍：</span>过去我们是不相识的我们醒来了却发现我们原是相亲相爱的一个人的...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li-bot clear">
+                        <a href="#">
+                            <i class="iconfont icon-liaotian"></i>
+                            <div class="b-txt">聊天</div>
+                        </a>
+                        <sapn class="gz" href="#">
+                            <i class="iconfont icon-attention"></i>
+                            <div class="b-txt">关注</div>
+                        </sapn>
+                        <a href="#">
+                            <i class="iconfont icon-xinfeng"></i>
+                            <div class="b-txt">发信</div>
+                        </a>
+                    </div>
+                </li>
+                <li class="">
+                    <div class="clear li-top">
+                        <img src="../imgs/j-ds1.png" alt="" class="dsp">
+                        <div class="ds-info">
+                            <div class="ds-top clear">
+                                <div class="dn fl">
+                                    <div class="name">Barbara</div>
+                                    <div class="id">ID: <span>485</span></div>
+                                    <img src="../imgs/j-sex1.png" alt="" class="sex">
+                                </div>
+                                <div class="fr zht zx">在线</div>
+                                <!--<div class="fr zht lx">离线</div>-->
+                            </div>
+                            <div class="ds-cent">
+                                <div class="ds-c-top">
+                                    <spa class="age">28</spa>
+                                    (<spa>1.75m.</spa>
+                                    <spa>硕士.</spa>
+                                    <spa>离婚</spa>)
+                                    <span>哈尔滨－南城</span>
+                                </div>
+                                <div class="ds-c-bot">
+                                    经验：<span class="year">4</span>年 &nbsp;
+                                    成功对数：<span class="dui">1123</span>
+                                </div>
+                            </div>
+                            <div class="ds-bot">
+                                <span>自我介绍：</span>过去我们是不相识的我们醒来了却发现我们原是相亲相爱的一个人的...
+                            </div>
+                        </div>
+                    </div>
+                    <div class="li-bot clear">
+                        <a href="#">
+                            <i class="iconfont icon-liaotian"></i>
+                            <div class="b-txt">聊天</div>
+                        </a>
+                        <sapn class="gz" href="#">
+                            <i class="iconfont icon-attention"></i>
+                            <div class="b-txt">关注</div>
+                        </sapn>
+                        <a href="#">
+                            <i class="iconfont icon-xinfeng"></i>
+                            <div class="b-txt">发信</div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/zepto.min.js" type="text/javascript"></script>
+<script src="../js/sm.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+    var flag = true
+    $('.qiehuan').click(function(){
+        if(flag){
+            $('.content>ul').removeClass('mo');
+            $('.content>ul').addClass('qie');
+        }else{
+            $('.content>ul').removeClass('qie');
+            $('.content>ul').addClass('mo');
+        }
+        flag = !flag
+    });
+
+    $('.li-bot').on('click', '.gz', function(){
+        if(flag){
+            $(this).css('color', '#e13953;');
+            $(this).find('div').css('color', '#e13953;');
+        }else{
+            $(this).css('color', '#999;');
+            $(this).find('div').css('color', '#999;');
+        }
+        flag = !flag
+    });
+})
+</script>

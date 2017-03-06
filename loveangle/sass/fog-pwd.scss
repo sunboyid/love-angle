@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import "mixin";
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#regedit-warp{
+    width: 100%;
+    height: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    .title-font{
+        font-size: Rem(44);
+        text-align: center;
+        height: Rem(285);
+        line-height: Rem(285);
+        color: $black;
+        font-weight: bold;
+    }
+    .reg-input-item{
+        width: 100%;
+        @include textHeight(Rem(100));
+        border-bottom: $border-bottom;
+        font-size: Rem(30);
+        .fl{
+            width: 24%;
+        }
+        .fr{
+            width: 74%;
+            input{
+                width: 55%;
+                height: Rem(100);
+                font-size: Rem(24);
+            }
+            .get-yanzheng{
+                display: inline-block;
+                width: Rem(200);
+                line-height: Rem(40);
+                text-align: center;
+                font-size: Rem(22);
+                border: $border-bottom;
+                border-radius: Rem(20);
+                color: $grey2;
+                vertical-align: center;
+                &:active{
+                    color: $white;
+                    background: $main-color;
+                    border: 1px solid $main-color;
+                }
+            }
+        }
+        &:first-of-type{
+            .fr{
+                input{
+                    width: 100%;
+                }
+            }
+        }
+        &:last-of-type{
+            .fr{
+                input{
+                    width: 55%;
+                }
+            }
+        }
+    }
+    .reg-submit{
+        width: 100%;
+        @include textHeight(Rem(86));
+        margin-top: Rem(123);
+        text-align: center;
+        background: $main-color;
+        color: $white;
+        font-size: Rem(32);
+        &:active{
+            background: $active-color;
+        }
+    }
+}

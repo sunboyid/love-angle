@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+body {
+  background-color: #fff;
+  width: 100%;
+  overflow: visible;
+}
+
+html .zhe {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+html .show {
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  display: none;
+  font-size: 0.6rem;
+  position: fixed;
+  background: #fff;
+  z-index: 30000;
+}
+html .show .item {
+  font-size: 0.6rem;
+  line-height: 2rem;
+  border-bottom: 1px solid #f2f2f2;
+}
+html .show .item .item-left {
+  width: 95%;
+}
+html .show .item .item-left .i-tit {
+  width: 30%;
+}
+html .show .item .item-left input {
+  width: 70%;
+}
+html .show .item .item-right {
+  width: 5%;
+}
+html .show .item .item-right .iconfont {
+  color: #999;
+  font-size: 0.6rem;
+}
+html .show .sub {
+  width: 90%;
+  color: #fff;
+  height: 1.8rem;
+  font-size: 0.6rem;
+  margin: 1rem 0;
+  background: #e13953;
+}
+html .show .man-num,
+html .show .woman-num {
+  color: #e13953;
+}
+
+#header {
+  width: 100%;
+  height: 1.92rem;
+  line-height: 1.92rem;
+  background-color: #fff;
+  padding-right: 3%;
+  box-sizing: border-box;
+}
+#header .icon-liebiao {
+  color: #999999;
+  font-weight: 700;
+  float: right;
+}
+
+.line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  background-color: #fff;
+}
+.container section {
+  border-bottom: 1px solid #f2f2f2;
+  padding: 1rem 0;
+}
+.container section .title-head .num {
+  float: left;
+  width: 5%;
+  height: 1rem;
+  font-size: 0.56rem;
+  font-weight: 700;
+  color: #e13953;
+  border-top: 3px solid #e13953;
+  border-bottom: 3px solid #e13953;
+}
+.container section .title-head .title {
+  float: left;
+  width: 70%;
+  height: 1.08rem;
+  line-height: 1.08rem;
+  font-size: 0.92rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container section img {
+  margin-top: 0.8rem;
+  width: 100%;
+  height: 6rem;
+}
+.container section .act-msg {
+  font-size: 0.5rem;
+  font-weight: 700;
+  margin-top: 0.4rem;
+}
+.container section .act-msg span {
+  font-weight: normal;
+}
+.container section .act-msg .pub-num {
+  color: #e13953;
+}
+
+/*# sourceMappingURL=blind-active.css.map */

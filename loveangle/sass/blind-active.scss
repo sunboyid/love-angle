@@ -1,0 +1,138 @@
+@charset "utf-8";
+@import "mixin";
+body {
+    background-color: #fff;
+    width: 100%;
+    overflow: visible;
+}
+
+html {
+    .zhe {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: none;
+        background: rgba(0, 0, 0, 0.5);
+        // z-index: 10000;
+    }
+    .show {
+        top: 0;
+        width: 100%;
+        // height: 25%;
+        // padding-top: Rem(100);
+        box-sizing: border-box;
+        text-align: center;
+        display: none;
+        font-size: Rem(30);
+        position: fixed;
+        background: #fff;
+        z-index: 30000;
+        .item {
+            font-size: Rem(30);
+            line-height: Rem(100);
+            border-bottom: 1px solid #f2f2f2;
+            .item-left {
+                width: 95%;
+                .i-tit {
+                    width: 30%;
+                    // line-height:Rem(120);
+                }
+                input {
+                    width: 70%;
+                    // z-index: 30000;
+                    // line-height:Rem(120);
+                }
+            }
+            .item-right {
+                width: 5%;
+                .iconfont {
+                    color: #999;
+                    font-size: Rem(30);
+                }
+            }
+        }
+        .sub {
+            width: 90%;
+            color: #fff;
+            height: Rem(90);
+            font-size: Rem(30);
+            margin: Rem(50) 0;
+            background: $main-color;
+        }
+        .man-num,
+        .woman-num {
+            color: $main-color;
+        }
+    }
+}
+
+#header {
+    width: 100%;
+    @include textHeight(Rem(96));
+    background-color: $white;
+    padding-right: 3%;
+    box-sizing: border-box;
+    .icon-liebiao {
+        color: $grey1;
+        font-weight: 700;
+        float: right;
+    }
+}
+
+.line {
+    width: 100%;
+    height: Rem(10);
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: Rem(150);
+    background-color: #fff;
+    section {
+        border-bottom: 1px solid #f2f2f2;
+        padding: Rem(50) 0;
+        .title-head {
+            .num {
+                float: left;
+                width: 5%;
+                height: Rem(50);
+                font-size: Rem(28);
+                font-weight: 700;
+                color: $main-color;
+                border-top: 3px solid $main-color;
+                border-bottom: 3px solid $main-color;
+            }
+            .title {
+                float: left;
+                width: 70%;
+                height: Rem(54);
+                line-height: Rem(54);
+                font-size: Rem(46);
+                // vertical-align: middle;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        img {
+            margin-top: Rem(40);
+            width: 100%;
+            height: Rem(300);
+        }
+        .act-msg {
+            font-size: Rem(25);
+            font-weight: 700;
+            margin-top: Rem(20);
+            span {
+                font-weight: normal;
+            }
+            .pub-num {
+                color: $main-color;
+            }
+        }
+    }
+}

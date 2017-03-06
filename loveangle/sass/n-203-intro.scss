@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import "mixin";
+
+body {
+	padding-top: Rem(76);
+}
+section {
+	width: Rem(690);
+	margin: Rem(30) auto;
+	
+	.head {
+		font-size: Rem(38);
+		font-weight: 700;
+		margin-bottom: Rem(40);
+	}
+
+	.title-pub {
+		font-size: Rem(22);
+		color: $grey4;
+		margin: Rem(10) 0;
+
+		span {
+			color: $black;
+			font-weight: 700;
+		}
+	}
+	
+	img {
+		width: 100%;
+		height: Rem(440);
+	}
+
+	.intro-msg {
+		font-size: Rem(26);
+	}
+}

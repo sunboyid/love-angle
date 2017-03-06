@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+html, body {
+  width: 100%;
+  height: 100%; }
+
+#regedit-warp {
+  width: 100%;
+  height: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box; }
+  #regedit-warp .title {
+    width: 3.84rem;
+    height: 3.84rem;
+    margin: 2.16rem 0 2.3rem 35%; }
+  #regedit-warp .fog-pwd {
+    margin-top: 0.76rem;
+    float: left; }
+    #regedit-warp .fog-pwd a {
+      font-size: 0.56rem;
+      color: #e13953; }
+  #regedit-warp .zc {
+    font-size: 0.56rem;
+    float: right;
+    margin-top: 0.76rem; }
+    #regedit-warp .zc img {
+      width: 0.48rem;
+      height: 0.52rem; }
+    #regedit-warp .zc .zc-name {
+      vertical-align: center;
+      color: #666666; }
+  #regedit-warp .reg-input-item {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 0.6rem; }
+    #regedit-warp .reg-input-item .fl {
+      width: 15%; }
+    #regedit-warp .reg-input-item .fr {
+      width: 85%; }
+      #regedit-warp .reg-input-item .fr input {
+        height: 2rem;
+        font-size: 0.48rem; }
+      #regedit-warp .reg-input-item .fr .get-yanzheng {
+        display: inline-block;
+        width: 3.2rem;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        text-align: center;
+        font-size: 0.44rem;
+        border: 1px solid #e7e7e7;
+        border-radius: 0.4rem;
+        color: #8c8c8c;
+        margin-top: 0.5rem; }
+        #regedit-warp .reg-input-item .fr .get-yanzheng:active {
+          color: #fff;
+          background: #e13953;
+          border: 1px solid #e13953; }
+    #regedit-warp .reg-input-item:first-of-type .fr input {
+      width: 100%; }
+    #regedit-warp .reg-input-item:first-of-type:last-of-type .fr input {
+      width: 55%; }
+  #regedit-warp .reg-submit {
+    width: 100%;
+    height: 1.72rem;
+    line-height: 1.72rem;
+    margin-top: 1.6rem;
+    text-align: center;
+    background: #e13953;
+    color: #fff;
+    font-size: 0.64rem; }
+    #regedit-warp .reg-submit:active {
+      background: #ba2c42; }
+
+/*# sourceMappingURL=n002-login.css.map */

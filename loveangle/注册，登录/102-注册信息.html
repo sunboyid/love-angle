@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script>
+    document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 15 + "px";
+</script>
+<link rel="stylesheet" href="../css/public.css">
+<link rel="stylesheet" href="../css/sm.min.css">
+<link rel="stylesheet" href="../font/iconfont.css">
+<link rel="stylesheet" href="../css/j-improveinfo.css">
+<title>注册信息</title>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current">
+        <div class="content">
+            <h3>注册信息</h3>
+            <form action="" class="zh-info">
+                <div class="item clear">
+                    <label for="" class="fl">推荐人：</label>
+                    <input type="text" class="fl name">
+                    <a href="#" class="saomiao">
+                        <i class="iconfont icon-saomiao"></i>
+                    </a>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">昵称：</label>
+                    <input type="text" class="fl n-name">
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">单身/非单身：</label>
+                    <input type="text" class="identity"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">生日：</label>
+                    <input type="text" class="birthday" data-toggle='date'/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">性别：</label>
+                    <input type="text" class="sex"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">身高：</label>
+                    <input type="text" class="height"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">收入：</label>
+                    <input type="text" class="income"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">学历：</label>
+                    <input type="text" class="education"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">居住地：</label>
+                    <input type="text" class="residence"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">户籍地：</label>
+                    <input type="text" class="domicile"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">登录密码：</label>
+                    <input type="password" class="loginword"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl">确认密码：</label>
+                    <input type="password" class="conword"/>
+                </div>
+                <div class="item clear">
+                    <label for="" class="fl code-l">验证码：</label>
+                    <div class="fl clear code-r">
+                        <input type="text" class="fl vercode"/>
+                        <input type="text" readonly="true" class="fr code" value="1234"/>
+                    </div>
+                </div>
+                <input type="submit" class="sub" value="下一步">
+            </form>
+        </div>
+    </div>
+</div>
+<div id="four-link-mask" style="display: none">
+    <div id="four-link">
+        <div id="link-header" class="clear">
+            <div class="close fl">取消</div>
+            <div class="header-title fl">标题</div>
+            <div class="sure fr">确定</div>
+        </div>
+        <div id="link-body" class="clear">
+            <div class="province-warp fl">
+                <ul></ul>
+            </div>
+            <div class="area-warp fl">
+                <ul></ul>
+            </div>
+            <div class="city-warp fl">
+                <ul></ul>
+            </div>
+            <div class="country-warp fl">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../js/zepto.min.js"></script>
+<script>$.config = {router: false}</script>
+<script src="../js/sm.min.js"></script>
+<!--四级联动-->
+<script src="../js/four-link.js"></script>
+<script src="../js/sm-city-picker.min.js"></script>
+<script>
+$(function(){
+    //表单验证 start
+    $('.sub').click(function(){
+        var Name =$('.name').val();//推荐人
+        var nName =$('.n-name').val();//昵称
+        var identity =$('.identity').val();//单身/非单身
+        var birthday =$('.birthday').val();//生日
+        var sex =$('.sex').val();//性别
+        var height =$('.height').val();//身高
+        var income =$('.income').val();//收入
+        var education =$('.education').val();//学历
+        var residence =$('.residence').val();//居住地
+        var domicile =$('.domicile').val();//户籍地
+        var loginword =$('.loginword').val();//登录密码
+        var conword =$('.conword').val();//确认密码
+        var vercode =$('.vercode').val();//输入验证码
+        var code =$('.code').val();//验证码
+
+
+        if(nName == ''){
+            alert('请输入昵称！');
+            return false
+        }
+
+        if(identity == ''){
+            alert('请选择你的身份！');
+            return false
+        }
+
+        if(birthday == ''){
+            alert('请选择你的生日！');
+            return false
+        }
+
+        if(sex == ''){
+            alert('请选择性别！');
+            return false
+        }
+
+        if(sex == ''){
+            alert('请选择性别！');
+            return false
+        }
+
+        if(height == ''){
+            alert('请选择你的身高！');
+            return false
+        }
+
+        if(income == ''){
+            alert('请选择你的收入！');
+            return false
+        }
+
+        if(education == ''){
+            alert('请选择你的学历！');
+            return false
+        }
+
+        if(residence == ''){
+            alert('请选择你的居住地！');
+            return false
+        }
+
+        if(domicile == ''){
+            alert('请输入你的户籍！');
+            return false
+        }
+
+        if(loginword == ''){
+            alert('请输入你的密码！');
+            return false
+        }
+
+        if(conword == ''){
+            alert('请确认密码！');
+            return false
+        }else if(conword != loginword){
+            alert('你输入的密码不一致！');
+            return false
+        }
+
+        if(vercode == ''){
+            alert('请输入验证码！');
+            return false
+        }else if(vercode != code){
+            alert('你输入的验证码不正确！');
+            return false
+        }
+        $('.zh-info').submit();
+    });
+//    表单验证 end
+
+
+//    生日
+    $("#my-input").calendar({
+        value: ['2015-12-09']
+    });
+
+//    单身/非单身
+    $(".identity").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身份</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['单身', '非单身']
+            }
+        ]
+    });
+
+//    性别
+    $(".sex").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择性别</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['男', '女']
+            }
+        ]
+    });
+
+//    身高
+    $(".height").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择身高</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['150cm以下', '150cm-159cm', '160cm-169cm', '170cm-174cm', '175cm-180cm', '180cm以上']
+            }
+        ]
+    });
+
+//    收入
+    $(".income").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择收入</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['500-1000元', '1001-2000元', '2001-3000元', '3001-4000元', '4001-5000元', '5001-6000元', '6001-7000元', '7001-8000元', '8000元以上']
+            }
+        ]
+    });
+
+//    学历
+    $(".education").picker({
+        toolbarTemplate: '<header class="bar bar-nav">\
+        <button class="button button-link pull-right close-picker">确定</button>\
+        <h1 class="title">选择学历</h1>\
+        </header>',
+        cols: [
+            {
+                textAlign: 'center',
+                values: ['小学', '初中', '高中', '大专', '本科', '本科以上']
+            }
+        ]
+    });
+
+//    居住地
+
+    fourLink($(".residence"));
+
+//    户籍地
+    $(".domicile").cityPicker({
+
+        fourLink($(".domicile"));
+    });
+
+});
+$.init();
+</script>

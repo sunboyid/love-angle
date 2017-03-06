@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/*$*/
+/*主色调*/
+/*次级色调*/
+/*点选颜色*/
+/*黑色*/
+/*底部1px横线*/
+/*底部10px*/
+/*rem计算*/
+/*mixin*/
+/*padding*/
+/*n行文字溢出隐藏*/
+/*单行文字垂直居中*/
+/*清除表单默认样式*/
+/*一行flex*/
+/*列表flex*/
+.page .content {
+  background: #fff;
+}
+
+h3 {
+  font-size: 0.88rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+form {
+  padding: 0 4%;
+  font-size: 0.6rem;
+}
+
+.item {
+  line-height: 2rem;
+  border-bottom: 1px solid #ececec;
+}
+
+label {
+  width: 30%;
+}
+
+.item > input {
+  width: 70%;
+}
+
+.item input {
+  line-height: 1.98rem;
+}
+
+.item .name {
+  width: 64%;
+}
+
+.item .saomiao {
+  width: 6%;
+  color: #999;
+  display: inline-block;
+}
+
+.saomiao .icon-saomiao {
+  color: #999;
+  font-size: 1rem;
+}
+
+.item .code-l {
+  width: 30%;
+}
+
+.item .code-r {
+  width: 70%;
+}
+
+.vercode {
+  width: 50%;
+}
+
+.code-r .code {
+  width: 44%;
+  color: #333;
+  text-align: center;
+  margin-top: 0.4rem;
+  line-height: 1.2rem;
+  background: #e7e7e7;
+  display: inline-block;
+}
+
+.sub {
+  display: block;
+  width: 92%;
+  color: #fff;
+  line-height: 1.8rem;
+  background: #e13953;
+  margin: 0.8rem auto 0.8rem auto;
+}
+
+/*# sourceMappingURL=j-improveinfo.css.map */
